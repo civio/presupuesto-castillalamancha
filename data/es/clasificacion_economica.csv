@@ -39,6 +39,7 @@ I,3,1,,Prestación de servicios y precios públicos
 I,3,2,,Tasas
 I,3,8,,Reintegros de operaciones corrientes
 I,3,9,,Otros ingresos
+I,4,1,,De organismos autónomos de la Junta
 I,4,3,,"De la administración del Estado, OO.AA., EE.PP. y otros entes públicos"
 I,4,4,,De la seguridad social
 I,4,6,,De corporaciones locales
@@ -148,6 +149,7 @@ I,3,8,0,De ejercicios cerrados
 I,3,8,1,De presupuesto corriente
 I,3,9,0,Recargos y multas
 I,3,9,9,Ingresos diversos
+I,4,1,0,De organismos autónomos de la Junta
 I,4,3,0,Fondo de suficiencia
 I,4,3,2,De diversos ministerios
 I,4,3,4,De organismos autónomos estatales
@@ -252,6 +254,7 @@ G,2,2,7,Trabajos realizados por otras empresas y profesionales
 G,2,2,8,Precios públicos
 G,2,2,9,Gastos funcionamiento de centros docentes públicos
 G,2,3,0,Dietas y locomoción
+G,2,3,2,Traslado
 G,2,3,3,Otras indemnizaciones
 G,2,4,5,Con entidades privadas
 G,2,5,0,Procedimientos de hospitalización
@@ -278,6 +281,7 @@ G,4,2,3,A fundaciones públicas regionales
 G,4,2,9,A otros entes públicos
 G,4,3,0,"A la administración del Estado, OO.AA, empresas públicas y otros entes públicos"
 G,4,3,3,En materia agropecuaria y medioambiental
+G,4,3,6,En materia de empleo y formación
 G,4,5,0,A comunidades autónomas
 G,4,6,0,A corporaciones locales
 G,4,6,1,En materia de promoción y protección social
@@ -334,6 +338,7 @@ G,7,6,2,En materia sanitaria
 G,7,6,3,En materia agropecuaria y medioambiental
 G,7,6,4,En materia de promoción cultural y del deporte
 G,7,6,5,En materia de promoción de sectores productivos
+G,7,6,6,En materia de empleo y formación
 G,7,7,0,A empresas privadas
 G,7,7,3,En materia agropecuaria y medioambiental
 G,7,7,4,En materia de promoción cultural y del deporte
@@ -345,6 +350,7 @@ G,7,8,3,En materia agropecuaria y mediambiental
 G,7,8,4,En materia promoción cultural y del deporte
 G,7,8,5,En materia de promoción de sectores productivos
 G,7,8,6,En materia de empleo y formación
+G,7,8,7,En materia educativa
 G,8,2,0,A corto plazo
 G,8,2,1,A largo plazo
 G,8,4,0,De empresas públicas de la Junta
