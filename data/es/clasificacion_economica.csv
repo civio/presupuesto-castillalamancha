@@ -27,7 +27,7 @@ G,9,,,Pasivos financieros
 # Ingresos
 I,1,0,,Sobre la renta
 I,1,1,,Sobre el capital
-I,2,0,,Transmisiones patrimoniales y actos jurídicos d.
+I,2,0,,Transmisiones patrimoniales y actos jurídicos documentados
 I,2,1,,Sobre el juego (extinguido)
 I,2,2,,Sobre consumos específicos
 I,2,3,,Sobre el valor añadido
@@ -37,7 +37,7 @@ I,3,1,,Prestación de servicios y precios públicos
 I,3,2,,Tasas
 I,3,8,,Reintegros de operaciones corrientes
 I,3,9,,Otros ingresos
-I,4,3,,"De la Admón. del Estado, OO.AA., EE.PP. y otros entes públicos"
+I,4,3,,"De la administración del Estado, OO.AA., EE.PP. y otros entes públicos"
 I,4,4,,De la seguridad social
 I,4,6,,De corporaciones locales
 I,4,9,,Del exterior
@@ -49,8 +49,8 @@ I,5,9,,Otros ingresos patrimoniales
 I,6,0,,De terrenos
 I,6,1,,De las demás inversiones reales
 I,6,8,,Reintegros por operaciones de capital
-I,7,0,,De la junta de comunidades de Castilla-La mancha
-I,7,3,,"De la Admón. del Estado, OO.AA., EE.PP. y otros EE.PP. estatales"
+I,7,0,,De la Junta de Comunidades de Castilla-La mancha
+I,7,3,,"De la administración del Estado, OO.AA., EE.PP. y otros entes públicos"
 I,7,6,,De corporaciones locales
 I,7,8,,De familias e insituciones sin fin de lucro
 I,7,9,,Del exterior
@@ -60,7 +60,7 @@ I,9,1,,Préstamos en moneda nacional
 # Gastos
 G,1,0,,Altos cargos
 G,1,1,,Personal eventual
-G,1,2,,Funcionarios(excep docente y de inst sanitarias)
+G,1,2,,Funcionarios (excepto docente y de instituciones sanitarias)
 G,1,3,,Laborales (excepto de instituciones sanitarias)
 G,1,5,,Incentivos al rendimiento
 G,1,6,,"Cuotas, prestaciones y gastos sociales a cargo del empleador"
@@ -71,13 +71,13 @@ G,2,1,,"Reparaciones, mantenimiento y conservación"
 G,2,2,,"Materiales, suministros y otros"
 G,2,3,,Indemnizaciones por razón del servicio
 G,2,4,,Prestación de servicios sociales con medios ajenos
-G,2,5,,Pprestación asistencia sanitaria con medios ajenos
+G,2,5,,Prestación asistencia sanitaria con medios ajenos
 G,3,0,,De deuda pública
 G,3,1,,De préstamos en moneda nacional
 G,3,3,,De depósitos fianzas y otros
-G,4,1,,A organismos autónomos de la junta
-G,4,2,,A entidades públicas de la junta
-G,4,3,,"A la Admón. del Estado, OO.AA., EE.PP. y otros entes públicos"
+G,4,1,,A organismos autónomos de la Junta
+G,4,2,,A entidades públicas de la Junta
+G,4,3,,"A la administración del Estado, OO.AA., EE.PP. y otros entes públicos"
 G,4,5,,A comunidades autónomas
 G,4,6,,A corporaciones locales
 G,4,7,,A empresas privadas
@@ -87,8 +87,8 @@ G,5,0,,Dotación fondo de contingencia y otros imprevistos
 G,5,2,,Otros imprevistos
 G,6,0,,Proyectos de inversión nueva
 G,6,1,,Proyectos de inversión de reposición
-G,7,2,,A entidades públicas de la junta
-G,7,3,,"A la Admón. del Estado, OO.AA., EE.PP. y otros entes públicos"
+G,7,2,,A entidades públicas de la Junta
+G,7,3,,"A la administración del Estado, OO.AA., EE.PP. y otros entes públicos"
 G,7,6,,A corporaciones locales
 G,7,7,,A empresas privadas
 G,7,8,,A familias e instituciones sin fin de lucro
@@ -100,17 +100,17 @@ G,9,3,,Devolución depósitos
 # Conceptos de Castilla-La Mancha
 #
 # Ingresos
-I,1,0,0,Impuesto sobre la Renta de las Personas Físicas
+I,1,0,0,Impuesto sobre la renta de las personas físicas
 I,1,1,0,Impuesto sobre sucesiones y donaciones
 I,1,1,1,Impuesto sobre el patrimonio
-I,1,1,3,Impues sobre Depósitos en las Entidades de Crédito
+I,1,1,3,Impuesto sobre depósitos en las entidades de crédito
 I,2,0,0,Sobre transmisiones intervivos
 I,2,0,1,Sobre actos jurídicos documentados
 I,2,1,1,Impuesto sobre las actividades del juego
 I,2,2,0,Impuestos especiales
 I,2,3,0,Impuesto sobre el valor añadido
-I,2,4,0,Impuestos sobre actividades que inciden en el M.A
-I,2,4,1,I.actividad gener efectos adverso sobre M.Ambiente
+I,2,4,0,Impuestos sobre actividades que inciden en el medio ambiente
+I,2,4,1,Impuestos sobre actividades generadoras de efectos adverso sobre medio ambiente
 I,3,0,0,Venta de publicaciones
 I,3,0,1,Venta de productos agropecuarios
 I,3,0,2,Venta de impresos de autoliquidación
@@ -129,7 +129,7 @@ I,3,2,1,"Tasa estatal rifas, tómbolas y combinac aleatorias"
 I,3,2,2,Tasas por dirección e inspección de obras
 I,3,2,3,Tasas en materia de agricultura y medio ambiente
 I,3,2,4,"Tasas en materia de industria, energía y comercio"
-I,3,2,5,"Tasas en materia en oo.pp.,trans, urban y vivienda"
+I,3,2,5,"Tasas en materia en OO.PP., transporte, urbanismo y vivienda"
 I,3,2,6,Tasas en materia de sanidad
 I,3,2,7,Tasas en materia de educación
 I,3,2,8,Tasas en materia de Bienestar Social
@@ -139,16 +139,16 @@ I,3,8,1,De presupuesto corriente
 I,3,9,0,Recargos y multas
 I,3,9,9,Ingresos diversos
 I,4,3,0,Fondo de suficiencia
-I,4,3,2,De diversos Ministerios
+I,4,3,2,De diversos ministerios
 I,4,3,4,De organismos autónomos estatales
 I,4,4,0,De la Seguridad Social
 I,4,6,0,De ayuntamientos
 I,4,6,1,De diputaciones
-I,4,9,2,Fondo europeo agrario de desarrollo rural. FEADER
-I,4,9,3,Fondo europeo agrario de garantía. FEAGA
+I,4,9,2,Fondo Europeo Agrario de Desarrollo Rural. FEADER
+I,4,9,3,Fondo Europeo Agrario de Garantía. FEAGA
 I,4,9,4,Fondo Social Europeo. FSE
 I,4,9,9,Otras transferencias
-I,5,1,1,Intereses de anticipos y préstamos concedidos l/p
+I,5,1,1,Intereses de anticipos y préstamos concedidos a largo plazo
 I,5,2,0,Intereses de cuentas bancarias
 I,5,4,0,Alquileres y productos de inmuebles
 I,5,4,1,Arrendamientos de fincas rústicas
@@ -178,7 +178,7 @@ I,7,6,0,De ayuntamientos
 I,7,6,1,De diputaciones
 I,7,8,0,De familias e instituciones sin fin de lucro
 I,7,9,0,Fondo Europeo de Desarrollo Regional. FEDER
-I,7,9,2,Fondo europeo agrario de desarrollo rural. FEADER
+I,7,9,2,Fondo Europeo Agrario de Desarrollo Rural. FEADER
 I,7,9,3,Fondo europeo agrario de garantía. FEAGA
 I,7,9,9,Otras transferencias
 I,8,2,0,A corto plazo
@@ -192,22 +192,21 @@ G,1,2,0,Retribuciones básicas
 G,1,2,1,Retribuciones complementarias
 G,1,3,0,Retribuciones básicas del personal laboral
 G,1,3,1,Retribuciones complementarias del personal laboral
-G,1,3,2,Retrib pers lab eventual por cc de la producción
-G,1,3,2,Retribuc básicas pers. labor event circ producción
+G,1,3,2,Retribuciones básicas personal laboral eventual por circunstancias de la producción
 G,1,5,1,Gratificaciones
-G,1,5,2,Incentivos al rendimiento personal de inst. sanita
+G,1,5,2,Incentivos al rendimiento personal de instalaciones sanitarias
 G,1,6,0,Cuotas sociales
-G,1,6,2,Gtos y prest scles funcio y otro (exc conce 163..)
-G,1,6,3,Gtos y prests sociales pers laboral(exc inst sani)
+G,1,6,2,Gastos y prestaciones sociales funcionarios y otros (excepto concepto 163)
+G,1,6,3,Gastos y prestaciones sociales personal laboral (excepto instalaciones sanitarias)
 G,1,6,7,Gastos y prestaciones sociales de personal docente
-G,1,6,8,Gastos y prestaciones sociales personal inst sanit
+G,1,6,8,Gastos y prestaciones sociales personal instalaciones sanitarias
 G,1,7,0,Retribuciones básicas
 G,1,7,1,Retribuciones complementarias
 G,1,7,2,Profesores de religión
-G,1,8,0,"Retrib básicas funcionario, estatutario y no labor"
-G,1,8,1,"Retribu comple pers funcionario, estat y no labora"
-G,1,8,5,Retribuciones de otro personal estatutario tempora
-G,1,8,6,Personal laboral fijo de Instituciones Sanitarias
+G,1,8,0,"Retrib básicas funcionario, estatutario y no laboral"
+G,1,8,1,"Retribu comple pers funcionario, estat y no laboral"
+G,1,8,5,Retribuciones de otro personal estatutario temporal
+G,1,8,6,Personal laboral fijo de instituciones sanitarias
 G,1,8,7,Personal laboral eventual
 G,1,8,8,Personal contratado de investigación
 G,1,8,9,Personal en formación en ciencias de la salud
@@ -232,7 +231,7 @@ G,2,2,3,Transportes
 G,2,2,4,Primas de seguros
 G,2,2,5,Tributos
 G,2,2,6,Gastos diversos
-G,2,2,7,Trabajos realizados por otras empresas y profesion
+G,2,2,7,Trabajos realizados por otras empresas y profesionales
 G,2,2,8,Precios públicos
 G,2,2,9,Gastos funcionamiento de centros docentes públicos
 G,2,3,0,Dietas y locomoción
@@ -255,31 +254,30 @@ G,3,3,2,Intereses de demora
 G,3,3,9,Otros gastos financieros
 G,4,1,0,A organismos autónomos de la Junta
 G,4,2,0,A empresas públicas de la Junta
-G,4,2,1,A Entidades Públicas de la Junta
-G,4,2,2,A Universidades públicas
-G,4,2,3,Fundaciones Públicas Reginales
-G,4,2,3,Fundaciones Públicas Regionales
+G,4,2,1,A entidades públicas de la Junta
+G,4,2,2,A universidades públicas
+G,4,2,3,A fundaciones públicas regionales
 G,4,2,9,A otros entes públicos
-G,4,3,0,"A la AA.EE., OO.AA, empresas púb y otros entes púb"
+G,4,3,0,"A la administración del Estado, OO.AA, empresas públicas y otros entes públicos"
 G,4,3,3,En materia agropecuaria y medioambiental
 G,4,5,0,A comunidades autónomas
 G,4,6,0,A corporaciones locales
 G,4,6,1,En materia de promoción y protección social
 G,4,6,2,En materia sanitaria
 G,4,6,3,En materia agropecuaria y medioambiental
-G,4,6,4,En materia promoción cultura y del deporte
+G,4,6,4,En materia de promoción cultural y del deporte
 G,4,6,6,En materia de empleo y formación
 G,4,6,7,En materia educativa
 G,4,7,0,A empresas privadas
 G,4,7,1,En materia de promoción y protección social
-G,4,7,3,En materia agrapocuaria y medioambiental
+G,4,7,3,En materia agropecuaria y medioambiental
 G,4,7,5,En materia de promoción de sectores productivos
 G,4,7,6,En materia de empleo y formación
 G,4,8,0,A familias e instituciones sin fin de lucro
 G,4,8,1,En materia de promoción y protección social
 G,4,8,2,En materia sanitaria
 G,4,8,3,En materia agropecuaria y medioambiental
-G,4,8,4,En materia promoción cultural y del deporte
+G,4,8,4,En materia de promoción cultural y del deporte
 G,4,8,5,En materia de promoción de sectores productivos
 G,4,8,6,En materia de empleo y formación
 G,4,8,7,En materia educativa
@@ -306,10 +304,10 @@ G,6,1,7,Bienes destinados al uso general
 G,6,1,8,Otro inmovilizado material
 G,6,1,9,Inmovilizado inmaterial
 G,7,2,0,A empresas públicas de la Junta
-G,7,2,1,A Entidades Públicas de la Junta
-G,7,2,2,A Universidades públicas
-G,7,2,3,Fundaciones Públicas Regionales
-G,7,3,0,"A la AA.EE., OO.AA, empresas púb y otros entes púb"
+G,7,2,1,A entidades públicas de la Junta
+G,7,2,2,A universidades públicas
+G,7,2,3,Fundaciones públicas regionales
+G,7,3,0,"A la administración del Estado, OO.AA, empresas públicas y otros entes públicos"
 G,7,6,0,A corporaciones locales
 G,7,6,1,En materia de promoción y protección social
 G,7,6,2,En materia sanitaria
@@ -328,7 +326,7 @@ G,7,8,5,En materia de promoción de sectores productivos
 G,7,8,6,En materia de empleo y formación
 G,8,2,0,A corto plazo
 G,8,2,1,A largo plazo
-G,9,0,1,Amortización de Deuda a largo plazo
+G,9,0,1,Amortización de deuda a largo plazo
 G,9,1,0,Amortización de préstamos recibidos a corto plazo
 G,9,1,1,Amortización de préstamos recibidos a largo plazo
 G,9,3,1,Devolución de fianzas
