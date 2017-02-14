@@ -16,6 +16,7 @@
 1,1,,,Alta dirección de la comunidad autónoma
 1,2,,,Administración general
 1,3,,,Relaciones exteriores
+1,4,,,Justicia
 2,2,,,Protección civil y seguridad ciudadana
 3,1,,,Seguridad y protección social
 3,2,,,Promoción social
@@ -31,6 +32,7 @@
 5,4,,,"Investigación científica, técnica y aplicada"
 6,1,,,Regulación económica
 6,3,,,Regulación financiera
+6,8,,,Otras actuaciones de carácter económico
 7,1,,,"Agricultura, ganadería y pesca"
 7,2,,,Industria y energía
 7,5,,,Turismo y comercio
@@ -40,8 +42,10 @@
 0,1,1,A,Deuda pública
 1,1,1,A,Actividad legislativa
 1,1,1,B,Control externo del sector público
+1,1,1,C,Oficina defensor del pueblo de Castilla-La Mancha
 1,1,2,A,Dirección y servicios generales de la presidencia
 1,1,2,B,Alto asesoramiento de la comunidad autónoma
+1,1,2,D,"Asesor de la comunidad autónoma en materia social, económica y laboral"
 1,2,1,A,Dirección y S.G. de presidencia y administraciones públicas
 1,2,1,B,Administración de la función pública
 1,2,1,C,Relación con las corporaciones locales
@@ -53,6 +57,7 @@
 1,2,6,E,Ordenación del juego
 1,2,6,F,Transparencia
 1,3,1,A,Coordinación de asuntos europeos
+1,4,0,B,Administración de justicia
 2,2,1,A,Protección ciudadana
 3,1,1,A,Dirección y S.G. bienestar social
 3,1,2,A,Pensiones y prestaciones asistenciales
@@ -65,6 +70,7 @@
 3,1,3,H,Atención a la dependencia
 3,1,5,A,Seguridad laboral
 3,2,1,A,"Dirección y S.G. de economía, empresas y empleo"
+3,2,1,B,Dirección y S.G. del SEPECAM
 3,2,2,A,Relaciones laborales
 3,2,2,B,Fomento y gestión del empleo
 3,2,2,C,Orientación e intermediación en mercado de trabajo
@@ -132,6 +138,7 @@
 6,3,1,A,Gestión financiera
 6,3,3,A,Imprevistos y funciones no clasificadas
 6,3,3,B,Fondo de contingencia de ejecución presupuestaria
+6,8,0,A,Defensa de la competencia
 7,1,1,A,"Dirección y S.G. de agricultura, medio ambiente y desarrollo rural"
 7,1,3,A,Producción vegetal
 7,1,3,B,Producción animal
