@@ -27,6 +27,7 @@ G,9,,,Pasivos financieros
 # Ingresos
 I,1,0,,Sobre la renta
 I,1,1,,Sobre el capital
+I,1,9,,Otros impuestos directos
 I,2,0,,Transmisiones patrimoniales y actos jurídicos documentados
 I,2,1,,Sobre el juego (extinguido)
 I,2,2,,Sobre consumos específicos
@@ -104,6 +105,7 @@ I,1,0,0,Impuesto sobre la renta de las personas físicas
 I,1,1,0,Impuesto sobre sucesiones y donaciones
 I,1,1,1,Impuesto sobre el patrimonio
 I,1,1,3,Impuesto sobre depósitos en las entidades de crédito
+I,1,9,0,Impuesto sobre diversos aprovechamientos
 I,2,0,0,Sobre transmisiones intervivos
 I,2,0,1,Sobre actos jurídicos documentados
 I,2,1,1,Impuesto sobre las actividades del juego
@@ -111,6 +113,7 @@ I,2,2,0,Impuestos especiales
 I,2,3,0,Impuesto sobre el valor añadido
 I,2,4,0,Impuestos sobre actividades que inciden en el medio ambiente
 I,2,4,1,Impuestos sobre actividades generadoras de efectos adverso sobre medio ambiente
+I,2,8,9,Otros impuestos indirectos
 I,3,0,0,Venta de publicaciones
 I,3,0,1,Venta de productos agropecuarios
 I,3,0,2,Venta de impresos de autoliquidación
@@ -169,6 +172,7 @@ I,6,1,7,Venta de equipos para procesos de información
 I,6,1,8,Venta de semovientes
 I,6,1,9,Venta de otras inversiones reales
 I,6,8,0,De ejercicios cerrados
+I,6,8,1,De presupuesto corriente
 I,7,0,0,De la Junta de Comunidades de Castilla-La Mancha
 I,7,3,0,Fondo de compensación interterritorial
 I,7,3,2,De diversos Ministerios
@@ -210,6 +214,7 @@ G,1,8,6,Personal laboral fijo de instituciones sanitarias
 G,1,8,7,Personal laboral eventual
 G,1,8,8,Personal contratado de investigación
 G,1,8,9,Personal en formación en ciencias de la salud
+G,2,0,0,Terrenos y bienes naturales
 G,2,0,2,Edificios y otras construcciones
 G,2,0,3,"Maquinaria, instalaciones y utillaje"
 G,2,0,4,Elementos de transporte
@@ -271,6 +276,7 @@ G,4,6,7,En materia educativa
 G,4,7,0,A empresas privadas
 G,4,7,1,En materia de promoción y protección social
 G,4,7,3,En materia agropecuaria y medioambiental
+G,4,7,4,En materia de promoción cultural y del deporte
 G,4,7,5,En materia de promoción de sectores productivos
 G,4,7,6,En materia de empleo y formación
 G,4,8,0,A familias e instituciones sin fin de lucro
@@ -326,6 +332,7 @@ G,7,8,5,En materia de promoción de sectores productivos
 G,7,8,6,En materia de empleo y formación
 G,8,2,0,A corto plazo
 G,8,2,1,A largo plazo
+G,8,4,1,De empresas privadas
 G,9,0,1,Amortización de deuda a largo plazo
 G,9,1,0,Amortización de préstamos recibidos a corto plazo
 G,9,1,1,Amortización de préstamos recibidos a largo plazo
