@@ -1,0 +1,24 @@
+# Ingresos
+I,1,,,Impuestos directos
+I,2,,,Impuestos indirectos
+I,3,,,"Tasas, precios públicos y otros ingresos"
+I,4,,,Transferencia corrientes
+I,4,,,Transferencias corrientes
+I,5,,,Ingresos patrimoniales
+I,6,,,Enajenacion de inversiones reales
+I,7,,,Transferencias de capital
+I,8,,,Activos financieros
+I,9,,,Pasivos financieros
+# Gastos
+G,1,,,Gastos de personal
+G,2,,,Gastos corrientes en bienes y servicios
+G,3,,,Gastos financieros
+G,4,,,Transferencias corrientes
+G,5,,,Fondo de contingencia
+G,6,,,Inversiones reales
+G,7,,,Transferencias de capital
+G,8,,,Activos financieros
+G,9,,,Pasivos financieros
+#
+# Conceptos específicos de Castilla-La Mancha
+#
