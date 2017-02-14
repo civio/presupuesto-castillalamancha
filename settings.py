@@ -90,7 +90,7 @@ FACEBOOK_ID             = '1869534906625008'
 ANALYTICS_ID            = 'UA-28946840-28'
 
 # Setup Data Source Budget link
-DATA_SOURCE_BUDGET      = ''
+DATA_SOURCE_BUDGET      = 'http://www.castillalamancha.es/node/54403'
 
 # Setup Data Source Population link
 DATA_SOURCE_POPULATION  = 'http://www.ine.es/jaxiT3/Tabla.htm?t=2853&L=0'
