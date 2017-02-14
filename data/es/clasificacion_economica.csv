@@ -55,6 +55,7 @@ I,7,6,,De corporaciones locales
 I,7,8,,De familias e insituciones sin fin de lucro
 I,7,9,,Del exterior
 I,8,2,,Reintegro de préstamos concedidos
+I,9,0,,Emisión de deuda pública
 I,9,1,,Préstamos en moneda nacional
 # Gastos
 G,1,0,,Altos cargos
@@ -113,9 +114,11 @@ I,3,0,0,Venta de publicaciones
 I,3,0,1,Venta de productos agropecuarios
 I,3,0,2,Venta de impresos de autoliquidación
 I,3,0,9,Venta de otros bienes
+I,3,1,0,Tarifas de publicidad
 I,3,1,1,Derechos de matrícula en cursos y seminarios
 I,3,1,2,"Derechos de alojamiento, restauración y residencia"
 I,3,1,3,"Entradas a museos, exposiciones y espectáculos"
+I,3,1,4,Derechos de plantación de viñedo
 I,3,1,5,De asistencia sanitaria
 I,3,1,8,Otros precios públicos
 I,3,1,9,Otros ingresos por prestación de servicios
@@ -153,6 +156,7 @@ I,5,5,9,Otras concesiones y aprovechamientos
 I,5,9,0,Otros ingresos patrimoniales
 I,6,0,0,Venta de solares de naturaleza urbana
 I,6,0,1,Venta de suelo para construcción de VPO
+I,6,0,2,Venta de suelo para planes urbanísticos
 I,6,0,3,Venta de terrenos no urbanos
 I,6,1,0,Venta de viviendas
 I,6,1,1,Venta de garajes y locales
@@ -175,6 +179,7 @@ I,7,9,3,Fondo europeo agrario de garantía. FEAGA
 I,7,9,9,Otras transferencias
 I,8,2,0,A corto plazo
 I,8,2,1,A largo plazo
+I,9,0,1,Emisión de deuda a largo plazo
 I,9,1,1,Préstamos recibidos a largo plazo
 # Gastos
 G,1,0,0,Retribuciones básicas y otras remunerac altos cargos
@@ -317,5 +322,6 @@ G,7,8,6,En materia de empleo y formación
 G,8,2,0,A corto plazo
 G,8,2,1,A largo plazo
 G,9,0,1,Amortización de Deuda a largo plazo
+G,9,1,0,Amortización de préstamos recibidos a corto plazo
 G,9,1,1,Amortización de préstamos recibidos a largo plazo
 G,9,3,1,Devolución de fianzas
