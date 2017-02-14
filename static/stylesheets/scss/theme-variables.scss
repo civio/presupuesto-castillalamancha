@@ -12,9 +12,9 @@ $gray-lightest:         lighten($gray-base, 96%) !default;
 
 $text-color:            #414141;
 
-$brand-primary:         #d32e12;
-$brand-secondary:       #49647A;
-$brand-terciary:        #DDCFC1;
+$brand-primary:         #003863;
+$brand-secondary:       #3b6687;
+$brand-terciary:        #deeefa;
 
 $link-color:            $brand-primary;
 $link-hover-color:      $link-color;
@@ -48,8 +48,8 @@ $container-large-desktop:  (1050px + $grid-gutter-width);
 // Main Entity Logo
 // -------------
 
-$main-entity-logo-width:   81px;
-$main-entity-logo-height:  68px;
+$main-entity-logo-width:   160px;
+$main-entity-logo-height:  103px;
 
 
 // Navbar
