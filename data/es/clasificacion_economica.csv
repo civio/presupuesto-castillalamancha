@@ -84,6 +84,7 @@ G,4,7,,A empresas privadas
 G,4,8,,A familias e instituciones sin fin de lucro
 G,4,9,,Al exterior
 G,5,0,,Dotación fondo de contingencia y otros imprevistos
+G,5,2,,Otros imprevistos
 G,6,0,,Proyectos de inversión nueva
 G,6,1,,Proyectos de inversión de reposición
 G,7,2,,A entidades públicas de la junta
@@ -113,6 +114,7 @@ I,2,4,1,I.actividad gener efectos adverso sobre M.Ambiente
 I,3,0,0,Venta de publicaciones
 I,3,0,1,Venta de productos agropecuarios
 I,3,0,2,Venta de impresos de autoliquidación
+I,3,0,3,Venta de cartones del bingo
 I,3,0,9,Venta de otros bienes
 I,3,1,0,Tarifas de publicidad
 I,3,1,1,Derechos de matrícula en cursos y seminarios
@@ -149,6 +151,7 @@ I,4,9,9,Otras transferencias
 I,5,1,1,Intereses de anticipos y préstamos concedidos l/p
 I,5,2,0,Intereses de cuentas bancarias
 I,5,4,0,Alquileres y productos de inmuebles
+I,5,4,1,Arrendamientos de fincas rústicas
 I,5,4,9,Otras rentas
 I,5,5,0,De concesiones administrativas
 I,5,5,1,Aprovechamientos agrícolas y forestales
@@ -162,6 +165,7 @@ I,6,1,0,Venta de viviendas
 I,6,1,1,Venta de garajes y locales
 I,6,1,2,Venta de maquinaria
 I,6,1,5,Venta de elementos de transporte
+I,6,1,7,Venta de equipos para procesos de información
 I,6,1,8,Venta de semovientes
 I,6,1,9,Venta de otras inversiones reales
 I,6,8,0,De ejercicios cerrados
@@ -242,6 +246,7 @@ G,2,5,4,Terapias respiratorias
 G,2,5,5,Proceedimientos terapéuticos
 G,2,5,6,Transporte sanitario
 G,2,5,7,Otras prestaciones de asistencia sanitaria
+G,2,5,8,Otros servicios de asistencia sanitaria
 G,3,0,0,Intereses
 G,3,0,1,"Gastos de emisión, modificación y cancelación"
 G,3,1,0,Intereses
@@ -280,6 +285,7 @@ G,4,8,6,En materia de empleo y formación
 G,4,8,7,En materia educativa
 G,4,9,0,Al exterior
 G,5,0,1,Fondo de Contingencia de Ejecución Presupuestaria
+G,5,2,0,Otros imprevistos
 G,6,0,0,Terrenos y bienes naturales
 G,6,0,1,Inversiones gestionadas para otros entes públicos
 G,6,0,2,Edificios y otras construcciones
@@ -290,6 +296,7 @@ G,6,0,6,Equipos para procesos de información
 G,6,0,7,Bienes destinados al uso general
 G,6,0,8,Otro inmovilizado material
 G,6,0,9,Inmovilizado inmaterial
+G,6,1,1,Inversiones gestionadas para otros entes públicos
 G,6,1,2,Edificios y otras construcciones
 G,6,1,3,"Maquinaria, instalaciones y utillaje"
 G,6,1,4,Elementos de transporte
