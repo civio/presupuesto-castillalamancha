@@ -11,9 +11,6 @@ MAIN_ENTITY_NAME = 'Castilla-La Mancha'
 # Theme Budget Loader class name. Default: 'SimpleBudgetLoader'
 BUDGET_LOADER = 'CastillaLaManchaBudgetLoader'
 
-# Theme Payments Loader class name. Default: 'PaymentsLoader'
-PAYMENTS_LOADER = 'CastillaLaManchaPaymentsLoader'
-
 
 # Show / hide Settings
 # ----------------------
