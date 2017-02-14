@@ -1,30 +1,138 @@
-# Extraído de TOMO_3_2017_-_Resumenes.pdf
-1,,,,Servicios públicos básicos
-1,1,,,Justicia
-1,3,,,Seguridad ciudadana e instituciones penitenciarias
-1,4,,,Política Exterior
-2,,,,Actuaciones de protección y promoción social
-2,3,,,Servicios Sociales y Promoción Social
-2,4,,,Fomento del Empleo
-2,6,,,Acceso a la vivienda y fomento de la edificación
-3,,,,Produccion de bienes públicos de carácter preferente
-3,1,,,Sanidad
-3,2,,,Educación
-3,3,,,Cultura
-4,,,,Actuaciones de carácter preferente
-4,1,,,Agricultura
-4,2,,,Industria y Energía
-4,3,,,Comercio
-4,4,,,Subvenciones al transporte
-4,5,,,Infraestructuras
-4,6,,,Investigación
-4,9,,,Otras actuaciones de carácter económico
-9,,,,Actuaciones de carácter general
-9,1,,,Alta Dirección
-9,2,,,Servicios de carácter general
-9,3,,,Administración Financiera y Tributaria
-9,4,,,Transferencias a otras Administraciones Públicas
-9,5,,,Deuda Pública
 #
-# Programas específicos de Castilla-La Mancha
+# Grupos de función de Castilla-La Mancha
 #
+0,,,,Deuda pública
+1,,,,Servicios de carácter general
+2,,,,"Defensa, protección civil y seguridad ciudadana"
+3,,,,"Seguridad, protección y promoción social"
+4,,,,Producción de bienes públicos de carácter social
+5,,,,Producción bienes públicos de carácter económico
+6,,,,Regulación económica de carácter general
+7,,,,Regulación económica de sectores productivos
+#
+# Funciones de Castilla-La Mancha
+#
+0,1,,,Deuda pública
+1,1,,,Alta dirección de la comunidad autónoma
+1,2,,,Administración general
+1,3,,,Relaciones exteriores
+2,2,,,Protección civil y seguridad ciudadana
+3,1,,,Seguridad y protección social
+3,2,,,Promoción social
+4,1,,,Sanidad
+4,2,,,Educación
+4,3,,,"Ordenación del territorio, urbanismo y vivienda"
+4,4,,,Medio ambiente y bienestar comunitario
+4,5,,,Cultura y deportes
+4,6,,,Otros servicios comunitarios y sociales
+5,1,,,Infraestructuras básicas y transportes
+5,2,,,Comunicaciones
+5,3,,,Infraestructuras agrarias
+5,4,,,"Investigación científica, técnica y aplicada"
+6,1,,,Regulación económica
+6,3,,,Regulación financiera
+7,1,,,"Agricultura, ganadería y pesca"
+7,2,,,Industria y energía
+7,5,,,Turismo y comercio
+#
+# Programas de Castilla-La Mancha
+#
+0,1,1,A,Deuda pública
+1,1,1,A,Actividad legislativa
+1,1,2,A,Dirección y servicios generales de la presidencia
+1,1,2,B,Alto asesoramiento de la comunidad autónoma
+1,2,1,B,Administración de la función pública
+1,2,1,C,Relación con las corporaciones locales
+1,2,1,D,Selección y formación del personal de la admón.
+1,2,6,A,Diario oficial de Castilla-La Mancha
+1,2,6,B,Servicio de publicaciones
+1,2,6,C,Medios de comunicación
+1,2,6,D,Calidad de los servicios
+1,2,6,E,Ordenación del juego
+1,2,6,F,Transparencia
+1,3,1,A,Coordinación de asuntos europeos
+2,2,1,A,Protección ciudadana
+3,1,1,A,Dirección y S.G. bienestar social
+3,1,2,A,Pensiones y prestaciones asistenciales
+3,1,3,A,Programas sociales básicos
+3,1,3,B,Prevención y apoyo a las familias
+3,1,3,C,Atención a las personas con discapacidad
+3,1,3,D,Atención a las personas mayores
+3,1,3,E,Atención y acompañamiento al menor
+3,1,3,F,Cooperación al desarrollo
+3,1,3,H,Atención a la dependencia
+3,1,5,A,Seguridad laboral
+3,2,1,A,"Dirección y S.G. de economía, empresas y empleo"
+3,2,2,A,Relaciones laborales
+3,2,2,B,Fomento y gestión del empleo
+3,2,2,C,Orientación e intermediación en mercado de trabajo
+3,2,3,A,Promoción y servicios de la juventud
+3,2,3,B,Promoción de la mujer
+3,2,4,A,Formación profesional para el empleo
+3,2,4,B,Programas mixtos de formación y empleo
+4,1,1,A,Direccion y servicios generales de sanidad
+4,1,1,B,Gestión y administración sanitaria
+4,1,2,C,Selección y formación del personal sanitario
+4,1,2,D,Atención integrada de la salud
+4,1,2,E,"planificación, atención a la salud e I. sanitarias"
+4,1,3,A,Epidemiología y promoción de la salud
+4,1,3,B,Sanidad ambiental e higiene de los alimentos
+4,1,3,C,Inspección sanitaria
+4,1,3,D,Calidad y humanización de la asistencia sanitaria
+4,2,1,A,"Dirección y S.G. de educación, cultura y deportes"
+4,2,1,B,Formación P. profesorado e innovación educativa
+4,2,2,A,Educación infantil y primaria
+4,2,2,B,"Educación secundaria, F.P. y E. de régimen especial"
+4,2,2,C,Enseñanza universitaria
+4,2,2,D,Atención a la diversidad
+4,2,2,F,Educación permanente de adultos
+4,2,3,A,Promoción educativa
+4,3,1,A,Promoción de la vivienda
+4,3,2,A,Gestión del urbanismo
+4,3,2,B,Planificación territorial y sostenibilidad
+4,4,1,B,Coordinación hidrológica
+4,4,2,B,Ordenación y conservación del medio natural
+4,4,2,C,Gestión y protección de espacios naturales
+4,4,2,D,Calidad ambiental
+4,4,2,E,Promoción y educación ambiental
+4,4,2,F,Evaluación ambiental y cambio climático
+4,4,3,B,"Protección,formación y defensa de los consumidores"
+4,5,2,A,"Libros, archivos y bibliotecas"
+4,5,5,A,Gestión cultural
+4,5,7,A,"Infraestructura, fomento y apoyo al deporte"
+4,5,8,A,Patrimonio artístico y museos
+4,6,1,A,Elecciones
+5,1,1,A,Dirección y servicios generales de fomento
+5,1,2,A,Creación de infraestructuras hidráulicas
+5,1,3,A,Creación de infraestructuras de carreteras
+5,1,3,B,Conservación y explotación de carreteras
+5,1,3,C,Ordenación e inspección del transporte
+5,2,1,A,Telecomunicaciones
+5,2,1,B,Desarrollo de la sociedad de la información
+5,3,1,A,Regadíos y explotaciones agrarias
+5,4,1,B,"Investigación, innovación y desarrollo tecnológico"
+5,4,1,C,Investigación y experimentación agraria
+5,4,1,E,Investigación sanitaria
+5,4,1,F,Fomento de la innovación tecnólogica
+5,4,1,H,Investigación agroalimentaria y forestal
+5,4,1,I,Cartografía
+6,1,1,A,Dirección y S.G. de hacienda y admones. públicas
+6,1,2,B,Programación y control presupuestario
+6,1,2,C,Control interno y contabilidad pública
+6,1,2,D,Administración del patrimonio
+6,1,2,E,Economía y gestión de fondos europeos
+6,1,3,A,Gestión tributaria
+6,3,1,A,Gestión financiera
+6,3,3,B,Fondo de contingencia de ejecución presupuestaria
+7,1,1,A,"Dirección y S.G. de agricultura, M. ambiente y D.R."
+7,1,3,A,Producción vegetal
+7,1,3,B,Producción animal
+7,1,6,A,Industrias y calidad agroalimentaria
+7,1,7,A,Promoción y desarrollo rural
+7,1,8,A,Política agraria comunitaria
+7,2,2,A,Política industrial y energética
+7,2,4,A,Competitividad empresarial
+7,5,1,B,Promoción exterior
+7,5,1,C,Ordenación y promoción del turismo
+7,5,1,D,Ordenación y promoción de la artesanía
+7,5,1,E,Ordenación y promoción del comercio
