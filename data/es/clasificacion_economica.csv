@@ -176,6 +176,7 @@ I,4,9,4,Fondo Social Europeo. FSE
 I,4,9,9,Otras transferencias
 I,5,1,1,Intereses de anticipos y préstamos concedidos a largo plazo
 I,5,2,0,Intereses de cuentas bancarias
+I,5,2,9,Intereses de otros depósitos
 I,5,4,0,Alquileres y productos de inmuebles
 I,5,4,1,Arrendamientos de fincas rústicas
 I,5,4,9,Otras rentas
@@ -190,6 +191,7 @@ I,6,0,3,Venta de terrenos no urbanos
 I,6,1,0,Venta de viviendas
 I,6,1,1,Venta de garajes y locales
 I,6,1,2,Venta de maquinaria
+I,6,1,3,Venta de instalaciones técnicas
 I,6,1,5,Venta de elementos de transporte
 I,6,1,6,Venta de mobiliario y enseres
 I,6,1,7,Venta de equipos para procesos de información
@@ -215,6 +217,7 @@ I,7,9,9,Otras transferencias
 I,8,2,0,A corto plazo
 I,8,2,1,A largo plazo
 I,8,3,1,Reintegro de fianzas
+I,8,4,0,De empresas públicas de la Junta
 I,8,4,1,De empresas privadas
 I,9,0,1,Emisión de deuda a largo plazo
 I,9,1,1,Préstamos recibidos a largo plazo
