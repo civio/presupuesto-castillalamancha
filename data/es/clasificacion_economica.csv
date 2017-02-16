@@ -223,6 +223,7 @@ I,8,3,1,Reintegro de fianzas
 I,8,4,0,De empresas públicas de la Junta
 I,8,4,1,De empresas privadas
 I,9,0,1,Emisión de deuda a largo plazo
+I,9,1,0,Préstamos recibidos a corto plazo
 I,9,1,1,Préstamos recibidos a largo plazo
 I,9,3,1,Fianzas recibidas
 # Gastos
