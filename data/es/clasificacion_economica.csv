@@ -41,8 +41,10 @@ I,3,8,,Reintegros de operaciones corrientes
 I,3,9,,Otros ingresos
 I,4,0,,De la Junta de Comunidades de Castilla-La Mancha
 I,4,1,,De organismos autónomos de la Junta
+I,4,2,,De empresas públicas y otros entes públicos
 I,4,3,,"De la administración del Estado, OO.AA., empresas públicas y otros entes públicos"
 I,4,4,,De la seguridad social
+I,4,5,,De comunidades autónomas
 I,4,6,,De corporaciones locales
 I,4,7,,De empresas privadas
 I,4,8,,De familias e instituciones sin fin de lucro
@@ -58,6 +60,7 @@ I,6,8,,Reintegros por operaciones de capital
 I,7,0,,De la Junta de Comunidades de Castilla-La mancha
 I,7,3,,"De la administración del Estado, OO.AA., empresas públicas y otros entes públicos"
 I,7,6,,De corporaciones locales
+I,7,7,,De empresas privadas
 I,7,8,,De familias e insituciones sin fin de lucro
 I,7,9,,Del exterior
 I,8,2,,Reintegro de préstamos concedidos
@@ -155,11 +158,14 @@ I,3,9,0,Recargos y multas
 I,3,9,9,Ingresos diversos
 I,4,0,0,De la Junta de Comunidades de Castilla-La Mancha
 I,4,1,0,De organismos autónomos de la Junta
+I,4,2,1,De entidades públicas de la Junta
+I,4,2,3,De fundaciones públicas regionales
 I,4,3,0,Fondo de suficiencia
 I,4,3,2,De diversos ministerios
 I,4,3,4,De organismos autónomos estatales
 I,4,3,6,De otros entes públicos
 I,4,4,0,De la Seguridad Social
+I,4,5,0,De comunidades autónomas
 I,4,6,0,De ayuntamientos
 I,4,6,1,De diputaciones
 I,4,7,0,De empresas privadas
@@ -199,6 +205,7 @@ I,7,3,3,Otras transferencias
 I,7,3,4,De organismos autónomos estatales
 I,7,6,0,De ayuntamientos
 I,7,6,1,De diputaciones
+I,7,7,0,De empresas privadas
 I,7,8,0,De familias e instituciones sin fin de lucro
 I,7,9,0,Fondo Europeo de Desarrollo Regional. FEDER
 I,7,9,1,Fondo de cohesión
