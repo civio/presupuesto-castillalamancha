@@ -39,10 +39,12 @@ I,3,1,,Prestación de servicios y precios públicos
 I,3,2,,Tasas
 I,3,8,,Reintegros de operaciones corrientes
 I,3,9,,Otros ingresos
+I,4,0,,De la Junta de Comunidades de Castilla-La Mancha
 I,4,1,,De organismos autónomos de la Junta
 I,4,3,,"De la administración del Estado, OO.AA., EE.PP. y otros entes públicos"
 I,4,4,,De la seguridad social
 I,4,6,,De corporaciones locales
+I,4,7,,De empresas privadas
 I,4,8,,De familias e instituciones sin fin de lucro
 I,4,9,,Del exterior
 I,5,1,,Intereses de anticipos y préstamos concedidos
@@ -59,9 +61,11 @@ I,7,6,,De corporaciones locales
 I,7,8,,De familias e insituciones sin fin de lucro
 I,7,9,,Del exterior
 I,8,2,,Reintegro de préstamos concedidos
+I,8,3,,Reintegro de depósitos
 I,8,4,,Enajenación de acciones, obligaciones y bonos
 I,9,0,,Emisión de deuda pública
 I,9,1,,Préstamos en moneda nacional
+I,9,3,,Depósitos y fianzas recibidas
 # Gastos
 G,1,0,,Altos cargos
 G,1,1,,Personal eventual
@@ -149,13 +153,16 @@ I,3,8,0,De ejercicios cerrados
 I,3,8,1,De presupuesto corriente
 I,3,9,0,Recargos y multas
 I,3,9,9,Ingresos diversos
+I,4,0,0,De la Junta de Comunidades de Castilla-La Mancha
 I,4,1,0,De organismos autónomos de la Junta
 I,4,3,0,Fondo de suficiencia
 I,4,3,2,De diversos ministerios
 I,4,3,4,De organismos autónomos estatales
+I,4,3,6,De otros entes públicos
 I,4,4,0,De la Seguridad Social
 I,4,6,0,De ayuntamientos
 I,4,6,1,De diputaciones
+I,4,7,0,De empresas privadas
 I,4,8,0,De familias e instituciones sin fin de lucro
 I,4,9,2,Fondo Europeo Agrario de Desarrollo Rural. FEADER
 I,4,9,3,Fondo Europeo Agrario de Garantía. FEAGA
@@ -185,6 +192,7 @@ I,6,1,9,Venta de otras inversiones reales
 I,6,8,0,De ejercicios cerrados
 I,6,8,1,De presupuesto corriente
 I,7,0,0,De la Junta de Comunidades de Castilla-La Mancha
+I,7,2,3,De fundaciones públicas
 I,7,3,0,Fondo de compensación interterritorial
 I,7,3,2,De diversos Ministerios
 I,7,3,3,Otras transferencias
@@ -199,9 +207,11 @@ I,7,9,3,Fondo europeo agrario de garantía. FEAGA
 I,7,9,9,Otras transferencias
 I,8,2,0,A corto plazo
 I,8,2,1,A largo plazo
+I,8,3,1,Reintegro de fianzas
 I,8,4,1,De empresas privadas
 I,9,0,1,Emisión de deuda a largo plazo
 I,9,1,1,Préstamos recibidos a largo plazo
+I,9,3,1,Fianzas recibidas
 # Gastos
 G,1,0,0,Retribuciones básicas y otras remunerac altos cargos
 G,1,1,0,Retribuciones básicas y otras remunerac pers eventual
