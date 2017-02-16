@@ -162,12 +162,14 @@ I,4,2,1,De entidades públicas de la Junta
 I,4,2,3,De fundaciones públicas regionales
 I,4,3,0,Fondo de suficiencia
 I,4,3,2,De diversos ministerios
+I,4,3,3,Otras transferencias
 I,4,3,4,De organismos autónomos estatales
 I,4,3,6,De otros entes públicos
 I,4,4,0,De la Seguridad Social
 I,4,5,0,De comunidades autónomas
 I,4,6,0,De ayuntamientos
 I,4,6,1,De diputaciones
+I,4,6,9,Otras transferencias
 I,4,7,0,De empresas privadas
 I,4,8,0,De familias e instituciones sin fin de lucro
 I,4,9,2,Fondo Europeo Agrario de Desarrollo Rural. FEADER
