@@ -1,1 +1,50 @@
 @import "theme-variables";
+
+a{
+  color: $brand-secondary;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  color: $dvmi-navbar-color;
+}
+
+.home-content .options .option>div .icon{
+  color: mix( $color-blue-light, $brand-secondary, 75% );
+}
+
+.home-content .options .option>div{
+  &:hover{
+    border-color: $brand-secondary;
+
+    h3{
+      color: $brand-secondary;
+    }
+  }
+  .btn{
+    text-transform: uppercase;
+    border-color: lighten($brand-secondary, 5%);
+    background: lighten($brand-secondary, 5%);
+
+    &:before{
+      display: none;
+    }
+
+    &:hover{
+      border-color: $brand-secondary;
+      background: $brand-secondary;
+    }
+  }
+}
+
+.form-search .form-inline{
+  .form-control,
+  .btn{
+    border-color: $color-green;
+  }
+  .btn{
+    background: $color-green;
+    &:hover{
+      background: darken( $color-green, 5% );
+    }
+  }
+}

@@ -12,9 +12,13 @@ $gray-lightest:         lighten($gray-base, 96%) !default;
 
 $text-color:            #414141;
 
-$brand-primary:         #003863;
-$brand-secondary:       #3b6687;
-$brand-terciary:        #deeefa;
+$brand-primary:         #44b7e2;
+$brand-secondary:       #003863;
+$brand-terciary:        #898989;
+
+$color-blue-light:      #deeefa;
+$color-green:           #009887;
+$color-green-light:     #c5e3d8;
 
 $link-color:            $brand-primary;
 $link-hover-color:      $link-color;
@@ -48,8 +52,8 @@ $container-large-desktop:  (1050px + $grid-gutter-width);
 // Main Entity Logo
 // -------------
 
-$main-entity-logo-width:   160px;
-$main-entity-logo-height:  103px;
+$main-entity-logo-width:   140px;
+$main-entity-logo-height:  90px;
 
 
 // Navbar
@@ -63,28 +67,28 @@ $navbar-border-radius: 0;
 $dvmi-menu-length: 3;  // Number of items in main menu
 
 // Navbar background color
-$navbar-default-bg:       $brand-primary;
-$navbar-default-bg-hover: mix( $navbar-default-bg, white, 75% );
+$navbar-default-bg:       $color-blue-light;
+$navbar-default-bg-hover: darken( $color-blue-light, 5% );
 
 // Navbar options text color
-$dvmi-navbar-color: mix( $brand-primary, white, 10% );
+$dvmi-navbar-color: $brand-secondary;
 
-$navbar-default-link-active-color:    $brand-primary;
-$navbar-default-link-active-bg:       $brand-terciary;
+$navbar-default-link-active-color:    $brand-secondary;
+$navbar-default-link-active-bg:       $color-green-light;
 
 
 // Footer
 // --------------
 
 $footer-color: white;
-$footer-bg: $brand-primary;
+$footer-bg: $brand-secondary;
 
 
 // Page Header
 // --------------
 
-$page-header-bg:            mix( $brand-secondary, white, 8% );
-$page-header-border-color:  mix( $brand-secondary, white, 70% );
+$page-header-bg:            mix( $color-green-light, white, 50% );
+$page-header-border-color:  $color-green-light;
 
 
 // Panels
@@ -155,30 +159,30 @@ $pagination-active-border:             $brand-secondary;
 // Search Form
 // --------------
 
-$search-form-bg: $brand-terciary;
+$search-form-bg: $color-green-light;
 
 
 // Budget Stream
 // --------------
 
-$budget-stream-color: $brand-secondary;
+$budget-stream-color: $color-green;
 
 
 // Year Slider
 // --------------
 
-$slider-bg:     $page-header-bg;
+$slider-bg:     $color-blue-light;
 $slider-color:  $brand-secondary;
 
 
 // Data Sources
 // --------------
 
-$data-sources-color: $brand-terciary;
+$data-sources-color: $brand-primary;
 
 
 // Sankey Viz
 // --------------
 
-$sankey-budget-color:     saturate( lighten( $brand-secondary, 12% ), 10% );                          // #1F77B4;
-$sankey-execution-color:  saturate( lighten( adjust-hue( $sankey-budget-color, 100% ), 10% ), 10% );  //#E377C2;
+$sankey-budget-color:     mix( $brand-terciary, white, 60% );
+$sankey-execution-color:  $brand-primary;
