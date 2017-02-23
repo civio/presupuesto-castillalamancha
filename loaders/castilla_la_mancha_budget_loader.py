@@ -122,21 +122,21 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
             # Income
             else:
                 # On economic codes we get the first three digits (everything but last two)
-                ec_code = line[10].strip()
+                ec_code = line[12].strip()
                 ec_code = ec_code[:-2]
 
                 # Item numbers are the last two digits from the economic codes (fourth and fifth digit)
-                item_number = line[10].strip()
+                item_number = line[12].strip()
                 item_number = item_number[-2:]
 
                 # Institutional code (all income goes to the root node)
                 ic_code = '0000'
 
                 # Description
-                description = line[11].strip()
+                description = line[13].strip()
 
                 # Parse amount
-                amount = line[12].strip()
+                amount = line[17].strip()
                 amount = self._parse_amount(amount)
 
                 return {
