@@ -1,0 +1,88 @@
+#Institución,Sección,Nombre
+02,,,Cortes de Castilla-La Mancha
+03,,,Sindicatura de Cuentas
+04,,,Consejo Consultivo
+05,,,Consejo Económico y Social
+06,,,Deuda pública
+11,,,Presidencia de la Junta
+15,,,Vicepresidencia y Economía y Hacienda
+17,,,Ordenación del Territorio y Vivienda
+18,,,"Educación, Ciencia y Cultura"
+19,,,"Empleo, Igualdad y Juventud"
+21,,,Agricultura y Medio Ambiente
+27,,,Salud y Bienestar Social
+50,,,Instituto de la Vid y el Vino
+55,,,Instituto de Promoción Exterior
+56,,,Agencia del Agua
+57,,,Servicio Público de Empleo
+61,,,Servicio de Salud
+70,,,Instituto de la Mujer
+02,01,0,Cortes de Castilla-La Mancha
+03,01,0,Síndico y auditores
+04,01,0,Consejo Consultivo
+05,01,0,Consejo Económico y Social
+06,01,0,Deuda pública
+11,01,0,Presidencia de la Junta
+11,02,0,Consejería de Presidencia y Administraciones Públicas
+11,04,0,Secretaría General de la Presidencia
+11,05,0,Dirección General de Coordinación
+11,08,0,Dirección General de la Función Pública y Calidad de Servicios
+11,09,0,Dirección General de Administración Local
+11,10,0,Dirección General de Protección Ciudadana
+11,11,0,Dirección General de Justicia
+11,12,0,Dirección General para la Sociedad de la Información y Telecomunicaciones
+15,02,0,Secretaría General
+15,03,0,Dirección General de Asuntos Europeos
+15,04,0,Dirección General de Presupuestos y Fondos Comunitarios
+15,05,0,Intervención General
+15,06,0,Dirección General de Tributos
+15,07,0,Dirección General de Política Financiera y Tesorería
+15,08,0,Dirección General de Promoción Empresarial y Comercio
+15,09,0,Dirección General de Planificación Económica
+15,10,0,Dirección General de Turismo y Artesania
+17,02,0,Secretaría General Técnica
+17,03,0,Dirección General de Carreteras
+17,04,0,Dirección General de Transportes
+17,06,0,Dirección General de Vivienda
+17,07,0,Dirección General de Urbanismo
+17,08,0,Dirección General de Planificación Territorial
+17,09,0,"Dirección General de Industria, Energía y Minas"
+18,02,0,Secretaría General
+18,03,0,Viceconsejería de Educación y Cultura
+18,04,0,Dirección General de Personal Docente
+18,07,0,Viceconsejería Ciencia y Tecnología
+18,08,0,Dirección General de Patrimonio Cultural
+18,09,0,Dirección General de Deportes
+18,10,0,Dirección General de Promoción Cultural
+19,02,0,Secretaría General Técnica
+19,03,0,Dirección General de Trabajo e Inmigración
+19,04,0,Dirección General de Seguridad y Salud Laboral
+19,05,0,Dirección General de la Mujer
+19,06,0,Dirección General de la Juventud
+21,02,0,Secretaría General Técnica
+21,03,0,Dirección General de Desarrollo Rural
+21,04,0,Dirección General de Producción Agropecuaria
+21,08,0,Dirección General de Política Forestal
+21,09,0,Dirección General de Mejora de la Explotaciones Agrarias
+21,10,0,Dirección General de Áreas Protegidas y Biodiversidad
+21,11,0,Dirección General de Evaluación Ambiental
+21,12,0,Dirección General de Calidad y Sostenibilidad Ambiental
+27,02,0,Secretaría General
+27,03,0,Dirección General de Coordinación Salud y Bienestar Social
+27,04,0,"Dirección General de Asistencia a Personas Mayores, Discapacitados y en Situación de Dependencia"
+27,05,0,Dirección General de Acción Social y Cooperación Internacional
+27,06,0,Dirección General de Salud Pública
+27,07,0,Dirección General de la Familia
+27,09,0,Dirección General de Ordenación y Evaluación
+27,10,0,Dirección General de Consumo
+50,01,0,Instituto de la Vid y el Vino
+55,01,0,Instituto de Promoción Exterior
+56,01,0,Agencia del Agua
+57,01,0,Secretaría General del SEPECAM
+57,02,0,Dirección General de Empleo
+57,03,0,Dirección General de Formación
+61,02,0,Secretaría General
+61,03,0,Dirección General de Atención Sanitaria y Calidad
+61,04,0,Dirección General de Recursos Humanos
+61,05,0,Dirección General Gestión Económica e Infraestructuras
+70,01,0,Instituto de la Mujer

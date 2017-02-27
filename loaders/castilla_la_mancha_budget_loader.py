@@ -30,8 +30,8 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
                 item_number = line[16].strip()
                 item_number = item_number[-2:]
 
-                # Institutional code (all income goes to the root node)
-                ic_code = '0000'
+                # We got 3- or 4- digit organic codes as input, so add a prefixing zero (also add a trailing one to fill up the department)
+                ic_code = line[2].rjust(4, '0') + '0'
 
                 # Description
                 description = line[17].strip()
@@ -61,8 +61,8 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
                 item_number = line[10].strip()
                 item_number = item_number[-2:]
 
-                # Institutional code (all income goes to the root node)
-                ic_code = '0000'
+                # We got 3- or 4- digit organic codes as input, so add a prefixing zero (also add a trailing one to fill up the department)
+                ic_code = line[2].rjust(4, '0') + '0'
 
                 # Description
                 description = line[11].strip()
@@ -97,8 +97,8 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
                 item_number = line[18].strip()
                 item_number = item_number[-2:]
 
-                # Institutional code (all income goes to the root node)
-                ic_code = '0000'
+                # We got 3- or 4- digit organic codes as input, so add a prefixing zero (also add a trailing one to fill up the department)
+                ic_code = line[2].rjust(4, '0') + '0'
 
                 # Description
                 description = line[19].strip()
@@ -106,7 +106,6 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
                 # Parse amount
                 amount = line[25].strip()
                 amount = self._parse_amount(amount)
-
 
                 return {
                     'is_expense': True,
@@ -129,8 +128,8 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
                 item_number = line[12].strip()
                 item_number = item_number[-2:]
 
-                # Institutional code (all income goes to the root node)
-                ic_code = '0000'
+                # We got 3- or 4- digit organic codes as input, so add a prefixing zero (also add a trailing one to fill up the department)
+                ic_code = line[2].rjust(4, '0') + '0'
 
                 # Description
                 description = line[13].strip()
@@ -148,3 +147,121 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
                     'description': description,
                     'amount': amount
                 }
+
+    
+    # We override this method in order to be able to change the institutional code check
+    def load_budget_items(self, budget, budget_items):
+        # Since the incoming data is not fully classified along the four dimensions we defined
+        # for the main budget (Aragón, the good one), we are forced to assign the items a 
+        # catch-all fake category. (Leaving the category blank would be another possibility,
+        # but we'd have to modify the DB structure for that, and also our breakdown queries,
+        # so I'm going this slightly hackier way first.)
+        dummy_fdc = FundingCategory(expense=True,   # True/False doesn't really matter
+                                    source='X',
+                                    fund_class=None,
+                                    fund=None,
+                                    description='Desconocido',
+                                    budget=budget)
+        dummy_fdc.save()
+
+        # Income data is often not classified functionally, but we need every budget item to be classified
+        # along all dimensions (at least for now), because of the way we denormalize/join the data in the app.
+        # So we create a fake functional category that will contain all the income data.
+        dummy_fc = FunctionalCategory(  area='X',
+                                        policy='XX',
+                                        function='XXX',
+                                        programme='XXXX',
+                                        subprogramme='XXXX',
+                                        description='Ingresos',
+                                        budget=budget)
+        dummy_fc.save()
+
+        # Store data in the database
+        budgeted_income = 0
+        budgeted_expense = 0
+        for item in budget_items:
+            # Ignore null entries or entries with no amount
+            if item == None or item['amount'] == 0:
+                continue
+
+            # Check whether budget income and expense match
+            if not item['is_actual']:
+                if item['is_expense']:
+                    budgeted_expense += item['amount']
+                else:
+                    budgeted_income += item['amount']
+
+            # Fetch economic category
+            ec = EconomicCategory.objects.filter(expense=item['is_expense'],
+                                                chapter=item['ec_code'][0],
+                                                article=item['ec_code'][0:2] if len(item['ec_code']) >= 2 else None,
+                                                heading=item['ec_code'][0:3] if len(item['ec_code']) >= 3 else None,
+                                                subheading = None,
+                                                budget=budget)
+            if not ec:
+                print u"ALERTA: No se encuentra la categoría económica de %s '%s' para '%s': %s€" % ("gastos" if item['is_expense'] else "ingresos", item['ec_code'].decode("utf8"), item['description'].decode("utf8"), item['amount']/100)
+                continue
+            else:
+                ec = ec[0]
+
+            # Fetch institutional category (the slice ranges are the actual thing we're changing)
+            ic = InstitutionalCategory.objects.filter(  institution=item['ic_code'][0:2],
+                                                        section=item['ic_code'][0:4] if len(item['ic_code']) >= 4 else None,
+                                                        department=item['ic_code'] if len(item['ic_code']) >= 5 else None,
+                                                        budget=budget)
+            if not ic:
+                print u"ALERTA: No se encuentra la categoría institucional '%s' para '%s': %s€" % (item['ic_code'].decode("utf8"), item['description'].decode("utf8"), item['amount']/100)
+                continue
+            else:
+                ic = ic[0]
+
+            # Fetch functional category, only for expense items
+            if item['is_expense']:
+                fc = FunctionalCategory.objects.filter( area=item['fc_code'][0:1],
+                                                        policy=item['fc_code'][0:2],
+                                                        function=item['fc_code'][0:3],
+                                                        programme=item['fc_code'][0:4] if self._use_subprogrammes() else item['fc_code'],
+                                                        subprogramme=item['fc_code'] if self._use_subprogrammes() else None,
+                                                        budget=budget)
+                if not fc:
+                    print u"ALERTA: No se encuentra la categoría funcional '%s' para '%s': %s€" % (item['fc_code'].decode("utf8"), item['description'].decode("utf8"), item['amount']/100)
+                    continue
+                else:
+                    fc = fc[0]
+            else:
+                fc = dummy_fc
+
+            BudgetItem(institutional_category=ic,
+                      functional_category=fc,
+                      economic_category=ec,
+                      funding_category=dummy_fdc,
+                      item_number=item.get('item_number', ''),
+                      expense=item['is_expense'],
+                      actual=item['is_actual'],
+                      amount=item['amount'],
+                      description=item['description'],
+                      budget=budget).save()
+
+        if budgeted_income != budgeted_expense:
+            print "  Info: los ingresos y gastos del presupuesto no coinciden %0.2f <> %0.2f" % (budgeted_income/100.0, budgeted_expense/100.0)
+
+
+    # We override this method to be able to load per year classification files
+    def load_institutional_classification(self, path, budget):
+        # The load path is the actual change we make
+        reader = csv.reader(open(os.path.join(path, 'clasificacion_organica.csv'), 'rb'))
+        for index, line in enumerate(reader):
+            if re.match("^#", line[0]):  # Ignore comments
+                continue
+
+            institution = line[0]
+            section = line[1]
+            department = line[2]
+            description = line[3]
+
+            ic = InstitutionalCategory( institution=institution if institution != "" else None,
+                                        section=institution+section if section != "" else None,
+                                        department=institution+section+department if department != "" else None,
+                                        description=description,
+                                        budget=budget)
+            ic.save()

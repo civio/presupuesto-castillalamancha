@@ -1,0 +1,77 @@
+#Institución,Sección,Nombre
+02,,,Cortes de Castilla-La Mancha
+04,,,Consejo Consultivo
+06,,,Deuda pública
+07,,,Créditos centralizados
+11,,,Presidencia de la Junta
+15,,,Hacienda y Administraciones Públicas
+17,,,Fomento
+18,,,"Educación, Cultura y Deportes"
+19,,,"Economía, Empresas y Empleo"
+21,,,"Agricultura, Medio Ambiente y Desarrollo Rural"
+26,,,Sanidad
+27,,,Bienestar Social
+51,,,Instituto Regional Investigación Agroalimentaria y Forestal
+55,,,Instituto de Promoción Exterior
+56,,,Agencia del Agua
+61,,,Servicio de Salud
+70,,,Instituto de la Mujer
+02,01,0,Cortes de Castilla-La Mancha
+04,01,0,Consejo Consultivo
+06,01,0,Deuda pública
+07,01,0,Créditos centralizados
+11,01,0,Presidencia de la Junta
+11,02,0,Vicepresidencia de la Junta
+11,04,0,Secretaría General de Presidencia
+11,05,0,Dirección General de Relaciones Institucionales y Asuntos Europeos
+11,06,0,Dirección General de Comunicación
+11,07,0,Dirección General de Promoción Institucional
+11,08,0,Dirección General de Coordinación y Planificación
+15,02,0,Secretaría General
+15,03,0,Viceconsejería de Administración Local y Coordinación Administrativa
+15,04,0,Dirección General de Presupuestos
+15,05,0,Intervención General
+15,06,0,Dirección General de Tributos y Ordenación del Juego
+15,07,0,"Dirección General de Política Financiera, Tesorería y Fondos Comunitarios"
+15,08,0,Dirección General de la Función Pública
+15,09,0,Dirección General de Protección Ciudadana
+17,02,0,Secretaría General
+17,03,0,Dirección General de Carreteras y Transportes
+17,06,0,Dirección General de Vivienda y Urbanismo
+17,07,0,Dirección General de Planificación Territorial y Sostenibilidad
+17,10,0,Dirección General de Telecomunicaciones y Nuevas Tecnologías
+18,02,0,Secretaría General
+18,03,0,"Viceconsejería de Educación, Universidad e Investigación"
+18,04,0,Dirección General Recursos Humanos y Planificación Educativa
+18,07,0,"Dirección General de Universidades, Investigación e Innovación"
+18,08,0,Viceconsejería de Cultura
+18,09,0,Dirección General de Juventud y Deportes
+19,02,0,Secretaría General
+19,03,0,Viceconsejería de Empleo y Relaciones Laborales
+19,07,0,"Dirección General de Industria, Energía y Minería"
+19,08,0,Dirección General de Programas de Empleo
+19,09,0,"Dirección General de Trabajo, Formación y Seguridad Laboral"
+19,11,0,"Dirección General de Empresas, Competitividad, Internacionalización"
+19,12,0,"Dirección General de Turismo, Comercio y Artesanía"
+21,02,0,Secretaría General
+21,03,0,Dirección General de Desarrollo Rural
+21,04,0,Dirección General de Agricultura y Ganadería
+21,05,0,Dirección General Industrias Agroalimentarias y Cooperativas
+21,10,0,Dirección General Política Forestal y Espacios Naturales
+21,12,0,Viceconsejería de Medio Ambiente
+26,02,0,Secretaría General
+26,06,0,Dirección General de Salud Pública y Consumo
+26,09,0,"Dirección General de Planificación, Ordenación e Inspección Sanitaria"
+26,10,0,Dirección General de Calidad y Humanización de la Asistencia Sanitaria
+27,02,0,Secretaría General
+27,03,0,Dirección General de Atención a la Dependencia
+27,04,0,Dirección General de Mayores y Personas con Discapacidad
+27,05,0,Dirección General de Acción Social y Cooperación
+27,07,0,Dirección General de Familias y Menores
+51,01,0,Instituto Regional de Investigación Agroalimentaria y Forestal
+55,01,0,Instituto de Promoción Exterior
+56,01,0,Agencia del Agua
+61,02,0,Secretaría General
+61,03,0,Dirección General de Asistencia Sanitaria
+61,04,0,Dirección General de Recursos Humanos
+70,01,0,Instituto de la Mujer
