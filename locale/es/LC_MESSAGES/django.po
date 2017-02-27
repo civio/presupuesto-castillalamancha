@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-02-18 12:14+0100\n"
-"PO-Revision-Date: 2017-02-14 07:21+0100\n"
+"PO-Revision-Date: 2017-02-27 11:39+0100\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Last-Translator: David Cabo <david@civio.es>\n"
 "Language-Team: \n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.8.12\n"
 
 #: templates/base.html:4 templates/shared/social_sharing.html:5
 msgid "Presupuestos del Gobierno de Aragón"
@@ -25,19 +25,13 @@ msgstr "Presupuestos de la Junta de Comunidades de Castilla-La Mancha"
 msgid "Información presupuestaria del Gobierno de Aragón"
 msgstr "Información presupuestaria de la Junta de Comunidades de Castilla-La Mancha"
 
-#: templates/budgets/budgets_intro.html:16
-msgid ""
-"El dinero recaudado localmente se complementa con las transferencias de la Administración General del Estado y del Gobierno de "
-"Aragón, que son los encargados de recaudar otros ingresos como el IVA y el IRPF"
-msgstr ""
-"Una parte del dinero recaudado se queda en la Administración General del Estado, mientras que otra parte se transfiere a la Junta de Comunidades de Castilla-La Mancha"
-
 #: templates/budgets/index.html:17
 msgid "Ingresos y gastos en el Gobierno de Aragón"
 msgstr "Ingresos y gastos en la Junta de Comunidades de Castilla-La Mancha"
 
-#: templates/budgets/index.html:127 templates/shared/data_sources.html:7 templates/shared/footer.html:18
-#: templates/shared/header.html:28 templates/shared/header.html.py:61 templates/welcome/index.html:54
+#: templates/budgets/index.html:127 templates/shared/data_sources.html:7
+#: templates/shared/footer.html:18 templates/shared/header.html:28
+#: templates/shared/header.html.py:61 templates/welcome/index.html:54
 msgid "Gobierno de Aragón"
 msgstr "Junta de Comunidades de Castilla-La Mancha"
 
@@ -60,3 +54,23 @@ msgstr "¿Cómo y en qué gasta la Junta de Comunidades de Castilla-La Mancha?"
 #: templates/welcome/index.html:42
 msgid "Para que tengas una idea general de los ingresos y gastos del Gobierno de Aragón"
 msgstr "Para que tengas una idea general de los ingresos y gastos de la Junta de Comunidades de Castilla-La Mancha"
+
+#: templates/budgets/budgets_intro.html:9
+msgid "La recaudación local"
+msgstr "La recaudación"
+
+#: templates/budgets/budgets_intro.html:10
+msgid "Se realiza a través de impuestos directos -como el impuesto de bienes inmuebles (IBI) o el de vehículos de tracción mecánica (IVTM)- y de tasas -como la de recogida de basura"
+msgstr "Se realiza a través de <strong>impuestos directos</strong> -como el IRPF y el impuesto de sociedades- y de <strong>impuestos indirectos</strong> -el IVA e impuestos sobre el tabaco, el alcohol o la gasolina"
+
+#: templates/budgets/budgets_intro.html:15
+msgid "Otras fuentes de ingresos"
+msgstr "¿Cómo se reparte?"
+
+#: templates/budgets/budgets_intro.html:16
+msgid "El dinero recaudado localmente se complementa con las transferencias de la Administración General del Estado y del Gobierno de Aragón, que son los encargados de recaudar otros ingresos como el IVA y el IRPF"
+msgstr "Una parte del dinero recaudado se queda en la <strong>Administración General del Estado</strong>, mientras que otra parte se transfiere a las <strong>comunidades autónomas</strong> y a las <strong>entidades locales</strong>"
+
+#: templates/budgets/budgets_intro.html:22
+msgid "El ayuntamiento utiliza el dinero recaudado, junto con otras fuentes de financiación como la deuda, para mantener los servicios públicos y la infraestructura de la ciudad."
+msgstr "<strong>La Junta de Comunidades de Castilla-La Mancha</strong> utiliza el dinero recaudado, junto con otras fuentes de financiación como puede ser la deuda, para mantener los servicios públicos."
