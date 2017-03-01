@@ -1,0 +1,14 @@
+<form id="tax-receipt-form" class="form-user-incomings form-inline" action="#" method="get">
+  <div class="form-group">
+    <label for="input-incomes">{{ _('Indica tus ingresos brutos anuales') }}</label>
+    <div class="input-group">
+      <input id="input-incomes" class="form-control" type="number" placeholder="30000" min="1000" max="150000" step="1000">
+      <div class="input-group-addon">€</div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">{{ _('Calcular') }}</button>
+</form>
+
+<p id="tax-amount">{{ _('Contribuyes con un total de <strong id="tax-amount-paid"></strong> a los presupuestos del Gobierno de Aragón')|safe }}.</p>
+
+<p class="tax-note"><small>{{ _('El cálculo está basado en aproximaciones medias y ni sustituye ni complementa a las declaraciones tributarias oficiales. La aproximación incluye IRPF, IVA e Impuestos Especiales, así como la cotización del trabajador a la Seguridad Social. Para realizar el cálculo hemos supuesto lo siguiente: todos tus ingresos provienen de rendimientos del trabajo; tienes un consumo medio de productos sometidos a impuestos especiales; al final del año ahorras el 8% de tus ingresos brutos si son superiores a 30.000€; y tienes  gastos deducibles por rendimientos del trabajo de 2.000€ en el IRPF') }}.</p>

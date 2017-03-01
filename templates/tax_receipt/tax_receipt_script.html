@@ -1,0 +1,90 @@
+<script>
+  $(function () {
+    var totalTaxPaid = 0;
+
+    // Display amount as expense per capita
+    function calculatePersonalTax(value, type, item) {
+      if (value == null) return null;
+      if (type === 'filter') return value;  // We filter based on the raw data
+
+      var percentage = value / getBreakdownValue(item.root);
+      return formatDecimal(percentage * totalTaxPaid) + " €";
+    }
+
+    function formatTaxAmount(value, decimals) {
+      var format = (decimals == false) ? '0,0' : '0,0.00';
+      return numeral(value).format( format, Math.floor ) + " €";
+    }
+
+    function calculateTaxAmount(val){
+      // get input placeholder if empty value
+      val = (val !== '') ? val : $('#input-incomes').attr('placeholder')
+
+      // A los ingresos brutos les restamos la media de reducciones[1], sin que pueda ser menor que cero.
+      var base_liquidable_irpf = val * 0.95;  
+
+      // Aplicamos la tarifa del IRPF de 2014 [2]
+      var cuota_integra_irpf;
+      if (base_liquidable_irpf <= 12450) {
+        cuota_integra_irpf = base_liquidable_irpf * 0.19;
+      } else if (base_liquidable_irpf <= 20200) {
+        cuota_integra_irpf = 2365.5 + (base_liquidable_irpf - 12450) * 0.24;
+      } else if (base_liquidable_irpf <= 34000) {
+        cuota_integra_irpf = 4225.5 + (base_liquidable_irpf - 20200) * 0.3;
+      } else if (base_liquidable_irpf <= 35200) {
+        cuota_integra_irpf = 8365.5 + (base_liquidable_irpf - 34000) * 0.37;
+      } else if (base_liquidable_irpf <= 60000) {
+        cuota_integra_irpf = 8809.5 + (base_liquidable_irpf - 35200) * 0.41;
+      } else {
+        cuota_integra_irpf = 18977.5 + (base_liquidable_irpf - 60000) * 0.45;
+      }
+
+      // reducción de 2.000€ por rendimientos del trabajo y aplicación mínimo personal 5550€ 
+      cuota_liquida_irpf = cuota_integra_irpf - 2000 - 1055;
+
+      // ahorro estimado: 8% a partir de 30.000€ de salario bruto anual 
+      ahorro = (val > 30000) ? val*0.08 : 0
+
+      // Porcentajes de recuadación de 2015 aplicados a los tipos vigentes en 2015 por el 100% de la renta disponible2010)
+      var iva = (val - cuota_liquida_irpf - ahorro) * 0.18432;
+      if (iva < 0) iva = 0;
+     
+      // Sumamos las cuotas de IRPF, IIEE e IVA para obtener lo que el ciudadano paga de impuestos:
+      // Supuesto: Cesión 50% IRPF, 50% IVA y 63% IIEE
+      total = (cuota_liquida_irpf*0.5) + (iva*0.5) + (1008*0.63)
+
+      // Sumamos las cuotas de IRPF, IIEE e IVA para obtener lo que el ciudadano paga de impuestos:
+      return total;
+    }
+
+    function redrawGrid(e) {
+      if(e){
+        e.preventDefault();
+      }
+
+      totalTaxPaid = calculateTaxAmount($('#input-incomes').val());
+      
+      $('#tax-amount-paid').html( formatTaxAmount(totalTaxPaid) );
+
+      if ( myGrid !== undefined )  myGrid.destroy();
+      myGrid = createBudgetGrid("#myGrid", gridData, [
+        { data: "label", title: '{{ _("Política") }}', render: getPolicyLinkFormatter() },
+        {
+          data: getBreakdownValue,
+          title: '{{ _("Gasto") }}',
+          render: calculatePersonalTax,
+          year: breakdown.years['{{ latest_budget.name()|safe }}']
+        }
+      ]);
+    }
+
+    var breakdown = {{ breakdown.to_json( labels=descriptions['functional'] )|safe }};
+    var gridData = breakdownToTable(breakdown);
+    var getBreakdownValue = getBreakdownValueFunction('expense', '{{ latest_budget.name()|safe }}');
+    var myGrid;
+
+    $("#tax-receipt-form").submit(redrawGrid);
+    $("#input-incomes").change(redrawGrid);
+    redrawGrid();
+  })
+</script>

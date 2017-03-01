@@ -48,3 +48,29 @@ a{
     }
   }
 }
+
+.tax-receipt-content .form-user-incomings,
+.tax-receipt-content #tax-amount{
+  background: $color-blue-light;
+}
+
+.tax-receipt-content .form-user-incomings{
+  padding-top: 2*$grid-gutter-width/3;
+  padding-bottom: 2*$grid-gutter-width/3;
+  text-align: center;
+
+  .form-group{
+    width: auto;
+    float: none;
+  }
+
+  .input-group{
+    margin-left: $grid-gutter-width/2;
+  }
+}
+
+.tax-receipt-content .tax-note{
+  padding: $grid-gutter-width/2 $grid-gutter-width;
+  margin-bottom: $grid-gutter-width;
+  background: $page-header-bg;
+}
