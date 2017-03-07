@@ -74,3 +74,10 @@ msgstr "Una parte del dinero recaudado se queda en la <strong>Administración Ge
 #: templates/budgets/budgets_intro.html:22
 msgid "El ayuntamiento utiliza el dinero recaudado, junto con otras fuentes de financiación como la deuda, para mantener los servicios públicos y la infraestructura de la ciudad."
 msgstr "<strong>La Junta de Comunidades de Castilla-La Mancha</strong> utiliza el dinero recaudado, junto con otras fuentes de financiación como puede ser la deuda, para mantener los servicios públicos."
+
+
+msgid "Presupuestos"
+msgstr "Presupuestos a tu alcance"
+
+msgid "Indica tus ingresos brutos anuales"
+msgstr "Indica tu salario bruto anual"
