@@ -163,7 +163,7 @@ OVERVIEW_EXPENSE_NODES = ['41', '42', '71', '51', '31', '01']
 # TREEMAP_LABELS_FONT_SIZE_MIN = 11
 
 # Allow overriding of default treemap color scheme
-# COLOR_SCALE = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#e7969c', '#bcbd22', '#17becf']
+COLOR_SCALE = ['#df65b0', '#6a3d9a', '#ff7f00', '#fec44f', '#e31a1c', '#238b45', '#66c2a4', '#045a8d', '#cab2d6', '#41b6c4',]  #['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#e7969c', '#bcbd22', '#17becf']
 
 # How many levels to show in the global institutional treemap? Default: 1.
 # INSTITUTIONAL_MAX_LEVELS = 2
