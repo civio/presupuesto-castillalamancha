@@ -131,7 +131,12 @@ FEATURED_PROGRAMMES = ['221A', '313A', '322B', '717A', '413D']
 # Overview Settings
 # ----------------------
 
-OVERVIEW_INCOME_NODES = ['43', '10', '22', '23', '49']
+OVERVIEW_INCOME_NODES = [ {
+                            'nodes': ['43'],
+                            'label': 'De la administración del Estado (cap. 4)',
+                            'link_id': '43'
+                          },
+                          '10', '22', '23', '49' ]
 
 OVERVIEW_EXPENSE_NODES = ['41', '42', '71', '51', '31', '01']
 
