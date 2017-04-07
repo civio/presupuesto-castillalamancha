@@ -1,6 +1,7 @@
 // Theme custom js methods
 $(document).ready(function(){
 
+  // add sankey alert
   var addSankeyAlert = function(selector) {
     var str = {
       'es': 'Se representan tanto los ingresos como los gastos no financieros (Capítulos del I al VII)',
@@ -12,4 +13,53 @@ $(document).ready(function(){
   };
 
   addSankeyAlert('.sankey-container');
+
+  // add treemap alert
+  var addTreemapAlert = function() {
+    var str = {
+      chapter_incomes: {
+        'es': 'Ingresos por capítulo'
+      },
+      article_incomes: {
+        'es': 'Ingresos por artículo'
+      },
+      chapter_expenses: {
+        'es': 'Gastos por capítulo'
+      },
+      article_expenses: {
+        'es': 'Gastos por artículo'
+      }
+    };
+
+    $('.policies-chart #budget-summary').prepend('<div class="alert alert-incomes">'+str.chapter_incomes[ $('html').attr('lang') ]+'</div>');
+    $('.policies-chart #budget-summary').append('<div class="alert alert-incomes alert-articles">'+str.article_incomes[ $('html').attr('lang') ]+'</div>');
+    $('.policies-chart #budget-summary').prepend('<div class="alert alert-expenses">'+str.chapter_expenses[ $('html').attr('lang') ]+'</div>');
+    $('.policies-chart #budget-summary').append('<div class="alert alert-expenses alert-articles">'+str.article_expenses[ $('html').attr('lang') ]+'</div>');
+
+  };
+
+  // show / hide treemap alert based on selected tab
+  var setupTreemapAlert = function(state) {
+    console.log('SETUP');
+    if (state == 'income') {
+      $('.policies-chart #budget-summary .alert-incomes').show();
+      $('.policies-chart #budget-summary .alert-expenses').hide();
+    } else if (state == 'expense') {
+      $('.policies-chart #budget-summary .alert-incomes').hide();
+      $('.policies-chart #budget-summary .alert-expenses').show();
+    } else {
+      $('.policies-chart #budget-summary .alert-incomes').hide();
+      $('.policies-chart #budget-summary .alert-expenses').hide();
+    }
+  };
+
+  addTreemapAlert();
+
+  setupTreemapAlert($('section').data('tab'));
+
+  $(window).bind('hashchange', function(e) {
+    var state = $.deparam.fragment();
+    setupTreemapAlert(state.view);
+  });
+
 });

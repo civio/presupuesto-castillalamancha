@@ -119,3 +119,16 @@ a{
   height: 32px;
   line-height: 32px
 }
+
+// Chapters and articles income and expenses alert
+.alert-incomes, .alert-expenses{
+  padding-top: 0;
+  margin: 0;
+  font-size: 1.150em;
+  text-align: center;
+}
+
+.alert-articles {
+  position: relative;
+  top: 1.150em;
+}
