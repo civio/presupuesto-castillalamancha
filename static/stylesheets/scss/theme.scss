@@ -89,7 +89,7 @@ a{
   background: $page-header-bg;
 }
 
-// Data Update Alert
+// Sankey data update alert
 .alert-data-update{
   padding-top: 0;
   text-align: center;
@@ -108,4 +108,14 @@ a{
     padding-bottom: 0;
     line-height: 1em;
   }
+}
+
+// Budget summary bar height
+.budget-summary{
+  height: 52px;
+}
+
+.budget-summary-item .budget-summary-bar{
+  height: 32px;
+  line-height: 32px
 }
