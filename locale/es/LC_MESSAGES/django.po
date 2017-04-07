@@ -81,3 +81,7 @@ msgstr "Presupuestos a tu alcance"
 
 msgid "Indica tus ingresos brutos anuales"
 msgstr "Indica tu salario bruto anual"
+
+#: templates/shared/data_sources_extra.html:1
+msgid "Los datos correspondientes a 2017 se refieren al Proyecto de Presupuestos que está pendiente de aprobación"
+msgstr "Los datos correspondientes a 2017 se refieren al Proyecto de Presupuestos que está pendiente de aprobación"
