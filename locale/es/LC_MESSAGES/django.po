@@ -61,7 +61,7 @@ msgstr "La recaudación"
 
 #: templates/budgets/budgets_intro.html:10
 msgid "Se realiza a través de impuestos directos -como el impuesto de bienes inmuebles (IBI) o el de vehículos de tracción mecánica (IVTM)- y de tasas -como la de recogida de basura"
-msgstr "Se realiza a través de <strong>impuestos directos</strong> -como el IRPF y el impuesto de sociedades- y de <strong>impuestos indirectos</strong> -el IVA e impuestos sobre el tabaco, el alcohol o la gasolina"
+msgstr "Se realiza a través de <strong>impuestos directos</strong> -como el IRPF- y de <strong>impuestos indirectos</strong> -el IVA e impuestos sobre el tabaco, el alcohol o la gasolina-"
 
 #: templates/budgets/budgets_intro.html:15
 msgid "Otras fuentes de ingresos"
