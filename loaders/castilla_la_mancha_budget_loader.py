@@ -8,67 +8,85 @@ import re
 
 class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
 
+    sections_mapping = {
+        '02': '1',
+        '03': '2',
+        '04': '3',
+        '05': '4',
+        '06': '5',
+        '07': '6',
+        '11': '7',
+        '15': '8',
+        '17': '9',
+        '18': 'A',
+        '19': 'B',
+        '20': 'C',
+        '21': 'D',
+        '22': 'E',
+        '26': 'F',
+        '27': 'G',
+        '50': 'H',
+        '51': 'I',
+        '55': 'J',
+        '56': 'K',
+        '57': 'L',
+        '61': 'M',
+        '70': 'N',
+    }
+
+    def _get_fc_code(self, value):
+        # We got 3- or 4- digit functional codes as input, so add a trailing zero
+        fc_code = value.strip()
+        fc_code = fc_code.ljust(4, '0')
+        return fc_code
+
+    def _get_ec_code(self, value):
+        # On economic codes we get the first three digits (everything but last two)
+        ec_code = value.strip()
+        ec_code = ec_code[:-2]
+        return ec_code
+
+    def _get_item_number(self, value):
+        # Item numbers are the last two digits from the economic codes (fourth and fifth digit)
+        item_number = value.strip()
+        item_number = item_number[-2:]
+        return item_number
+
+    def _get_ic_code(self, value):
+        # We got 3- or 4- digit organic codes as input, so add a prefixing zero (also add a trailing one to fill up the department)
+        ic_code = value.rjust(4, '0') + '0'
+        # But we need just one digit for the institutional breakdown section grouping, and as the section is comprised by the two
+        # first digits, we need to map them to just one char in order for the breakdown grouping to work properly
+        ic_code = self.sections_mapping.get(ic_code[:2], 'Z') + ic_code[-3:]
+        return ic_code
+
+    def _get_description(self, value):
+        # Description
+        description = value.strip()
+        return description
+
+    def _get_amount(self, value):
+        # Parse amount
+        amount = value.strip()
+        amount = self._parse_amount(amount)
+        return amount
+
     # Parse an input line into fields
     def parse_item(self, filename, line):
         # Type of data
         is_expense = (filename.find('gastos.csv')!=-1)
         is_actual = (filename.find('/ejecucion_')!=-1)
 
-        # Institutional sections mapping
-        sections_mapping = {
-            '02': '1',
-            '03': '2',
-            '04': '3',
-            '05': '4',
-            '06': '5',
-            '07': '6',
-            '11': '7',
-            '15': '8',
-            '17': '9',
-            '18': 'A',
-            '19': 'B',
-            '20': 'C',
-            '21': 'D',
-            '22': 'E',
-            '26': 'F',
-            '27': 'G',
-            '50': 'H',
-            '51': 'I',
-            '55': 'J',
-            '56': 'K',
-            '57': 'L',
-            '61': 'M',
-            '70': 'N',
-        }
-
         # Execution
         if is_actual:
             # Expenses
             if is_expense:
-                # We got 3- or 4- digit functional codes as input, so add a trailing zero
-                fc_code = line[8].strip()
-                fc_code = fc_code.ljust(4, '0')
-
-                # On economic codes we get the first three digits (everything but last two)
-                ec_code = line[16].strip()
-                ec_code = ec_code[:-2]
-
-                # Item numbers are the last two digits from the economic codes (fourth and fifth digit)
-                item_number = line[16].strip()
-                item_number = item_number[-2:]
-
-                # We got 3- or 4- digit organic codes as input, so add a prefixing zero (also add a trailing one to fill up the department)
-                ic_code = line[2].rjust(4, '0') + '0'
-                # But we need just one digit for the institutional breakdown section grouping, and as the section is comprised by the two
-                # first digits, we need to map them to just one char in order for the breakdown grouping to work properly
-                ic_code = sections_mapping.get(ic_code[:2], 'Z') + ic_code[-3:]
-
-                # Description
-                description = line[17].strip()
-
-                # Parse amount
-                amount = line[18].strip()
-                amount = self._parse_amount(amount)
+                fc_code     = self._get_fc_code(line[8])
+                ec_code     = self._get_ec_code(line[16])
+                item_number = self._get_item_number(line[16])
+                ic_code     = self._get_ic_code(line[2])
+                description = self._get_description(line[17])
+                amount      = self._get_amount(line[18])
 
                 return {
                     'is_expense': True,
@@ -83,26 +101,11 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
 
             # Income
             else:
-                # On economic codes we get the first three digits (everything but last two)
-                ec_code = line[10].strip()
-                ec_code = ec_code[:-2]
-
-                # Item numbers are the last two digits from the economic codes (fourth and fifth digit)
-                item_number = line[10].strip()
-                item_number = item_number[-2:]
-
-                # We got 3- or 4- digit organic codes as input, so add a prefixing zero (also add a trailing one to fill up the department)
-                ic_code = line[2].rjust(4, '0') + '0'
-                # But we need just one digit for the institutional breakdown section grouping, and as the section is comprised by the two
-                # first digits, we need to map them to just one char in order for the breakdown grouping to work properly
-                ic_code = sections_mapping.get(ic_code[:2], 'Z') + ic_code[-3:]
-
-                # Description
-                description = line[11].strip()
-
-                # Parse amount
-                amount = line[12].strip()
-                amount = self._parse_amount(amount)
+                ec_code     = self._get_ec_code(line[10])
+                item_number = self._get_item_number(line[10])
+                ic_code     = self._get_ic_code(line[2])
+                description = self._get_description(line[11])
+                amount      = self._get_amount(line[12])
 
                 return {
                     'is_expense': False,
@@ -118,30 +121,12 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
         else:
             # Expenses
             if is_expense:
-                # We got 3- or 4- digit functional codes as input, so add a trailing zero
-                fc_code = line[10].strip()
-                fc_code = fc_code.ljust(4, '0')
-
-                # On economic codes we get the first three digits (everything but last two)
-                ec_code = line[18].strip()
-                ec_code = ec_code[:-2]
-
-                # Item numbers are the last two digits from the economic codes (fourth and fifth digit)
-                item_number = line[18].strip()
-                item_number = item_number[-2:]
-
-                # We got 3- or 4- digit organic codes as input, so add a prefixing zero (also add a trailing one to fill up the department)
-                ic_code = line[2].rjust(4, '0') + '0'
-                # But we need just one digit for the institutional breakdown section grouping, and as the section is comprised by the first
-                # two digits, we need to map them to just one char in order for the breakdown grouping to work properly
-                ic_code = sections_mapping.get(ic_code[:2], 'Z') + ic_code[-3:]
-
-                # Description
-                description = line[19].strip()
-
-                # Parse amount
-                amount = line[25].strip()
-                amount = self._parse_amount(amount)
+                fc_code     = self._get_fc_code(line[10])
+                ec_code     = self._get_ec_code(line[18])
+                item_number = self._get_item_number(line[18])
+                ic_code     = self._get_ic_code(line[2])
+                description = self._get_description(line[19])
+                amount      = self._get_amount(line[25])
 
                 return {
                     'is_expense': True,
@@ -156,26 +141,11 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
 
             # Income
             else:
-                # On economic codes we get the first three digits (everything but last two)
-                ec_code = line[12].strip()
-                ec_code = ec_code[:-2]
-
-                # Item numbers are the last two digits from the economic codes (fourth and fifth digit)
-                item_number = line[12].strip()
-                item_number = item_number[-2:]
-
-                # We got 3- or 4- digit organic codes as input, so add a prefixing zero (also add a trailing one to fill up the department)
-                ic_code = line[2].rjust(4, '0') + '0'
-                # But we need just one digit for the institutional breakdown section grouping, and as the section is comprised by the two
-                # first digits, we need to map them to just one char in order for the breakdown grouping to work properly
-                ic_code = sections_mapping.get(ic_code[:2], 'Z') + ic_code[-3:]
-
-                # Description
-                description = line[13].strip()
-
-                # Parse amount
-                amount = line[17].strip()
-                amount = self._parse_amount(amount)
+                ec_code     = self._get_ec_code(line[12])
+                item_number = self._get_item_number(line[12])
+                ic_code     = self._get_ic_code(line[2])
+                description = self._get_description(line[13])
+                amount      = self._get_amount(line[17])
 
                 return {
                     'is_expense': False,
@@ -287,33 +257,6 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
 
     # We override this method to be able to load per year classification files
     def load_institutional_classification(self, path, budget):
-        # Institutional sections mapping
-        sections_mapping = {
-            '02': '1',
-            '03': '2',
-            '04': '3',
-            '05': '4',
-            '06': '5',
-            '07': '6',
-            '11': '7',
-            '15': '8',
-            '17': '9',
-            '18': 'A',
-            '19': 'B',
-            '20': 'C',
-            '21': 'D',
-            '22': 'E',
-            '26': 'F',
-            '27': 'G',
-            '50': 'H',
-            '51': 'I',
-            '55': 'J',
-            '56': 'K',
-            '57': 'L',
-            '61': 'M',
-            '70': 'N',
-        }
-
         # The load path is the actual change we make
         reader = csv.reader(open(os.path.join(path, 'clasificacion_organica.csv'), 'rb'))
         for index, line in enumerate(reader):
@@ -322,7 +265,7 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
 
             # We need to map the two digits institution code (their section code) to one char
             institution = line[0]
-            institution = sections_mapping.get(institution, 'Z')
+            institution = self.sections_mapping.get(institution, 'Z')
             section = line[1]
             department = line[2]
             description = line[3]
