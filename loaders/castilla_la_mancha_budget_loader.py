@@ -14,6 +14,33 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
         is_expense = (filename.find('gastos.csv')!=-1)
         is_actual = (filename.find('/ejecucion_')!=-1)
 
+        # Institutional sections mapping
+        sections_mapping = {
+            '02': '1',
+            '03': '2',
+            '04': '3',
+            '05': '4',
+            '06': '5',
+            '07': '6',
+            '11': '7',
+            '15': '8',
+            '17': '9',
+            '18': 'A',
+            '19': 'B',
+            '20': 'C',
+            '21': 'D',
+            '22': 'E',
+            '26': 'F',
+            '27': 'G',
+            '50': 'H',
+            '51': 'I',
+            '55': 'J',
+            '56': 'K',
+            '57': 'L',
+            '61': 'M',
+            '70': 'N',
+        }
+
         # Execution
         if is_actual:
             # Expenses
@@ -32,6 +59,9 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
 
                 # We got 3- or 4- digit organic codes as input, so add a prefixing zero (also add a trailing one to fill up the department)
                 ic_code = line[2].rjust(4, '0') + '0'
+                # But we need just one digit for the institutional breakdown section grouping, and as the section is comprised by the two
+                # first digits, we need to map them to just one char in order for the breakdown grouping to work properly
+                ic_code = sections_mapping.get(ic_code[:2], 'Z') + ic_code[-3:]
 
                 # Description
                 description = line[17].strip()
@@ -63,6 +93,9 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
 
                 # We got 3- or 4- digit organic codes as input, so add a prefixing zero (also add a trailing one to fill up the department)
                 ic_code = line[2].rjust(4, '0') + '0'
+                # But we need just one digit for the institutional breakdown section grouping, and as the section is comprised by the two
+                # first digits, we need to map them to just one char in order for the breakdown grouping to work properly
+                ic_code = sections_mapping.get(ic_code[:2], 'Z') + ic_code[-3:]
 
                 # Description
                 description = line[11].strip()
@@ -99,6 +132,9 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
 
                 # We got 3- or 4- digit organic codes as input, so add a prefixing zero (also add a trailing one to fill up the department)
                 ic_code = line[2].rjust(4, '0') + '0'
+                # But we need just one digit for the institutional breakdown section grouping, and as the section is comprised by the first
+                # two digits, we need to map them to just one char in order for the breakdown grouping to work properly
+                ic_code = sections_mapping.get(ic_code[:2], 'Z') + ic_code[-3:]
 
                 # Description
                 description = line[19].strip()
@@ -130,6 +166,9 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
 
                 # We got 3- or 4- digit organic codes as input, so add a prefixing zero (also add a trailing one to fill up the department)
                 ic_code = line[2].rjust(4, '0') + '0'
+                # But we need just one digit for the institutional breakdown section grouping, and as the section is comprised by the two
+                # first digits, we need to map them to just one char in order for the breakdown grouping to work properly
+                ic_code = sections_mapping.get(ic_code[:2], 'Z') + ic_code[-3:]
 
                 # Description
                 description = line[13].strip()
@@ -205,9 +244,9 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
                 ec = ec[0]
 
             # Fetch institutional category (the slice ranges are the actual thing we're changing)
-            ic = InstitutionalCategory.objects.filter(  institution=item['ic_code'][0:2],
-                                                        section=item['ic_code'][0:4] if len(item['ic_code']) >= 4 else None,
-                                                        department=item['ic_code'] if len(item['ic_code']) >= 5 else None,
+            ic = InstitutionalCategory.objects.filter(  institution=item['ic_code'][0],
+                                                        section=item['ic_code'][0:3] if len(item['ic_code']) >= 3 else None,
+                                                        department=item['ic_code'] if len(item['ic_code']) >= 4 else None,
                                                         budget=budget)
             if not ic:
                 print u"ALERTA: No se encuentra la categoría institucional '%s' para '%s': %s€" % (item['ic_code'].decode("utf8"), item['description'].decode("utf8"), item['amount']/100)
@@ -248,13 +287,42 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
 
     # We override this method to be able to load per year classification files
     def load_institutional_classification(self, path, budget):
+        # Institutional sections mapping
+        sections_mapping = {
+            '02': '1',
+            '03': '2',
+            '04': '3',
+            '05': '4',
+            '06': '5',
+            '07': '6',
+            '11': '7',
+            '15': '8',
+            '17': '9',
+            '18': 'A',
+            '19': 'B',
+            '20': 'C',
+            '21': 'D',
+            '22': 'E',
+            '26': 'F',
+            '27': 'G',
+            '50': 'H',
+            '51': 'I',
+            '55': 'J',
+            '56': 'K',
+            '57': 'L',
+            '61': 'M',
+            '70': 'N',
+        }
+
         # The load path is the actual change we make
         reader = csv.reader(open(os.path.join(path, 'clasificacion_organica.csv'), 'rb'))
         for index, line in enumerate(reader):
             if re.match("^#", line[0]):  # Ignore comments
                 continue
 
+            # We need to map the two digits institution code (their section code) to one char
             institution = line[0]
+            institution = sections_mapping.get(institution, 'Z')
             section = line[1]
             department = line[2]
             description = line[3]
