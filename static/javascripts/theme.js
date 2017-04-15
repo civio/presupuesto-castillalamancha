@@ -40,7 +40,6 @@ $(document).ready(function(){
 
   // show / hide treemap alert based on selected tab
   var setupTreemapAlert = function(state) {
-    console.log('SETUP');
     if (state == 'income') {
       $('.policies-chart #budget-summary .alert-incomes').show();
       $('.policies-chart #budget-summary .alert-expenses').hide();
