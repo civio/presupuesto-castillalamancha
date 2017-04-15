@@ -52,13 +52,30 @@ $(document).ready(function(){
     }
   };
 
+  // add section labels to institutional budget summary, see #430
+  var setupBudgetSummaryLabels = function(state) {
+    if (state == 'institutional') {
+      $('.budget-summary-item-M .budget-summary-label').text('Servicio de salud');
+      $('.budget-summary-item-5 .budget-summary-label').text('Deuda pública');
+      $('.budget-summary-item-A .budget-summary-label').text('Educación, Cultura y Deportes');
+      $('.budget-summary-item-D .budget-summary-label').text('Agricultura, Medio Ambiente y Desarrollo Rural');
+      $('.budget-summary-item-G .budget-summary-label').text('Bienestar Social');
+    }
+  };
+
   addTreemapAlert();
 
   setupTreemapAlert($('section').data('tab'));
+  setupBudgetSummaryLabels($('section').data('tab'));
 
   $(window).bind('hashchange', function(e) {
     var state = $.deparam.fragment();
     setupTreemapAlert(state.view);
+    setupBudgetSummaryLabels(state.view);
   });
 
+  $('#year-selection').on('change', function() {
+    var state = $.deparam.fragment();
+    setupBudgetSummaryLabels(state.view);
+  });
 });
