@@ -90,7 +90,11 @@ function calculateIndicators(chapterBreakdown, budgetStatuses, adjustInflationFn
   $('#total-net-savings').text(format(net_savings));
   $('#total-funding-capacity').text(format(funding_capacity));
 
-  $('#indicators-year, #totals-year').text(uiState.year);
+  var year_description = uiState.year;
+  var budget_status = budgetStatusLabels[budgetStatuses[uiState.year]];
+  if ( budget_status != undefined && budget_status != '' )
+    year_description += ' ('+ budget_status + ')';
+  $('#indicators-year, #totals-year').text(year_description);
 }
 
 // Show the budget indicators for the current year.
