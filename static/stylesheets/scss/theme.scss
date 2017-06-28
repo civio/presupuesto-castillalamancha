@@ -16,9 +16,46 @@ a{
   }
 }
 
-@media (max-width: $screen-md) {
+.navbar-brand{
+  width: auto;
+  left: 200px;
+  height: auto;
+}
+
+// Transparencia Logo
+.transparencia-logo{
+  width: 370px;
+  height: 75px;
+  margin: 0 auto 30px;
+  padding-left: 185px;
+  vertical-align: middle;
+  background: url(../assets/logo-transparencia.png) 0 0 no-repeat transparent;
+  background-size: auto 75px;
+  text-align: left;
+
+  a{
+    display: block;
+    color: #777;
+    font-size: 1.25em;
+    padding-left: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-left: 1px solid #777;
+  }
+}
+
+@media (max-width: $screen-lg) {
   .navbar-brand{
     font-size: 2.5em;
+    left: 186px;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .transparencia-logo{
+    float: right;
+    margin-top: 38px;
+    margin-bottom: 0;
   }
 }
 
