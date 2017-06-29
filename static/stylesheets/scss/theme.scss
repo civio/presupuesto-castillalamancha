@@ -126,6 +126,10 @@ a{
   background: $page-header-bg;
 }
 
+.tax-receipt-table-content .footnote{
+  display: none;
+}
+
 // Sankey data update alert
 .alert-data-update{
   padding-top: 0;
