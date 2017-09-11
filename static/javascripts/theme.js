@@ -69,7 +69,7 @@ $(document).ready(function(){
       'es': 'últimos datos publicados'
     };
     var str2017 = {
-      'es': 'prórroga 2016'
+      'es': 'aprobados 2017'
     };
 
     $('.data-controllers .layout-slider .slider .slider-tick-label').each(function(){
