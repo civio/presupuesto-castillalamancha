@@ -69,7 +69,7 @@ $(document).ready(function(){
       'es': 'últimos datos publicados'
     };
     var str2017 = {
-      'es': 'aprobados 2017'
+      'es': 'primer semestre'
     };
 
     $('.data-controllers .layout-slider .slider .slider-tick-label').each(function(){
