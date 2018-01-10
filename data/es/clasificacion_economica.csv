@@ -323,6 +323,7 @@ G,4,7,3,En materia agropecuaria y medioambiental
 G,4,7,4,En materia de promoción cultural y del deporte
 G,4,7,5,En materia de promoción de sectores productivos
 G,4,7,6,En materia de empleo y formación
+G,4,7,7,En materia educativa
 G,4,8,0,A familias e instituciones sin fin de lucro
 G,4,8,1,En materia de promoción y protección social
 G,4,8,2,En materia sanitaria
@@ -353,6 +354,7 @@ G,6,1,6,Equipos para procesos de información
 G,6,1,7,Bienes destinados al uso general
 G,6,1,8,Otro inmovilizado material
 G,6,1,9,Inmovilizado inmaterial
+G,7,1,0,A organismos autónomos de la Junta
 G,7,2,0,A empresas públicas de la Junta
 G,7,2,1,A entidades públicas de la Junta
 G,7,2,2,A universidades públicas
