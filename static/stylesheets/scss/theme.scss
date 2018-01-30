@@ -173,3 +173,14 @@ a{
   position: relative;
   top: 1.150em;
 }
+
+.main-footer .credit-aragon .link-civio{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 $grid-gutter-width/6;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+} 
