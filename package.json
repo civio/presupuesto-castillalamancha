@@ -13,9 +13,9 @@
     "start": "concurrently --kill-others \"npm run css-watch\" \"npm run browser-sync\""
   },
   "dependencies": {
-    "browser-sync": "^2.18.2",
+    "browser-sync": "^2.24.4",
     "concurrently": "^3.1.0",
-    "node-sass": "^3.13.0",
-    "nodemon": "^1.11.0"
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5"
   }
 }
