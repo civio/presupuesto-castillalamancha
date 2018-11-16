@@ -65,18 +65,12 @@ $(document).ready(function(){
 
   // custom labels for year selector
   var addYearSelectorCustomLabels = function(){
-    var str2017 = {
-      'es': 'primer semestre'
-    };
     var str2018 = {
       'es': 'primer semestre'
     };
 
     $('.data-controllers .layout-slider .slider .slider-tick-label').each(function(){
       var val = $(this).html();
-      if (val === '2017') {
-        $(this).html(val + '<br/><small><i> ('+ str2017[ $('html').attr('lang') ] +')</i></small>');
-      };
       if (val === '2018') {
         $(this).html(val + '<br/><small><i> ('+ str2018[ $('html').attr('lang') ] +')</i></small>');
       };

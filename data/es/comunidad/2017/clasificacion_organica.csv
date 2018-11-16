@@ -21,12 +21,14 @@
 06,01,0,Deuda pública
 07,01,0,Créditos centralizados
 11,01,0,Presidencia de la Junta
-11,02,0,Vicepresidencia de la Junta
+11,02,0,Vicepresidencia Primera de la Junta
+11,03,0,Vicepresidencia Segunda de la Junta
 11,04,0,Secretaría General de Presidencia
 11,05,0,Dirección General de Relaciones Institucionales y Asuntos Europeos
 11,06,0,Dirección General de Comunicación
 11,07,0,Dirección General de Promoción Institucional
 11,08,0,Dirección General de Coordinación y Planificación
+11,09,0,Consejera Encargada de la Coordinación del Plan de Garantías Ciudadanas
 15,02,0,Secretaría General
 15,03,0,Viceconsejería de Administración Local y Coordinación Administrativa
 15,04,0,Dirección General de Presupuestos
