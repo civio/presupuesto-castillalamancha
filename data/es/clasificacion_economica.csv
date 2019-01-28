@@ -345,6 +345,7 @@ G,6,0,6,Equipos para procesos de información
 G,6,0,7,Bienes destinados al uso general
 G,6,0,8,Otro inmovilizado material
 G,6,0,9,Inmovilizado inmaterial
+G,6,1,0,Infraestructuras y bienes destinados a uso general
 G,6,1,1,Inversiones gestionadas para otros entes públicos
 G,6,1,2,Edificios y otras construcciones
 G,6,1,3,"Maquinaria, instalaciones y utillaje"
@@ -354,6 +355,22 @@ G,6,1,6,Equipos para procesos de información
 G,6,1,7,Bienes destinados al uso general
 G,6,1,8,Otro inmovilizado material
 G,6,1,9,Inmovilizado inmaterial
+G,6,2,0,"Edificios, terrenos y otras construcciones"
+G,6,2,1,"Maquinaria, instalaciones y utillaje"
+G,6,2,2,Elementos de transporte
+G,6,2,3,Mobiliario y enseres
+G,6,2,4,Equipos para procesos de información
+G,6,2,5,Otro inmovilizado material
+G,6,3,0,Edificios y otras construcciones
+G,6,3,1,"Maquinaria, instalaciones y utillaje"
+G,6,3,2,Elementos de transporte
+G,6,3,3,Mobiliario y enseres
+G,6,3,4,Equipos para procesos de información
+G,6,3,5,Otro inmovilizado material
+G,6,4,0,Inversiones de inmovilizado inmaterial
+G,6,5,0,Inversiones de inmovilizado inmaterial
+G,6,7,0,"Inversión de reposición en vivienda, locales y otros"
+G,6,9,0,Inversión nueva gestionada para otros entes públicos
 G,7,1,0,A organismos autónomos de la Junta
 G,7,2,0,A empresas públicas de la Junta
 G,7,2,1,A entidades públicas de la Junta
