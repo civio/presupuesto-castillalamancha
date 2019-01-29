@@ -65,15 +65,21 @@ $(document).ready(function(){
 
   // custom labels for year selector
   var addYearSelectorCustomLabels = function(){
-    var str2018 = {
-      'es': 'primer semestre'
-    };
+    var lang = $('html').attr('lang')
+    var labels = {
+      '2018': { 'es': 'primer semestre' },
+      '2019': { 'es': 'prorrogado' }
+    }
 
     $('.data-controllers .layout-slider .slider .slider-tick-label').each(function(){
-      var val = $(this).html();
-      if (val === '2018') {
-        $(this).html(val + '<br/><small><i> ('+ str2018[ $('html').attr('lang') ] +')</i></small>');
-      };
+      var year = $(this).html();
+      var year_labels = labels[year]
+
+      if (typeof(year_labels) == 'undefined') {
+        return
+      }
+
+      $(this).html(year + '<br/><small><i> ('+ year_labels[lang] +')</i></small>');
     });
   };
 
