@@ -101,6 +101,7 @@ G,5,0,,Dotación fondo de contingencia y otros imprevistos
 G,5,2,,Otros imprevistos
 G,6,0,,Proyectos de inversión nueva
 G,6,1,,Proyectos de inversión de reposición
+G,6,9,,Inversión nueva gestionada para otros entes públicos
 G,7,2,,A entidades públicas de la Junta
 G,7,3,,"A la administración del Estado, OO.AA., empresas públicas y otros entes públicos"
 G,7,6,,A corporaciones locales
@@ -236,6 +237,7 @@ G,1,2,1,Retribuciones complementarias
 G,1,3,0,Retribuciones básicas del personal laboral
 G,1,3,1,Retribuciones complementarias del personal laboral
 G,1,3,2,Retribuciones básicas personal laboral eventual por circunstancias de la producción
+G,1,3,8,Personal contratado de investigación
 G,1,5,0,Productividad
 G,1,5,1,Gratificaciones
 G,1,5,2,Incentivos al rendimiento personal de instalaciones sanitarias
@@ -371,6 +373,7 @@ G,6,4,0,Inversiones de inmovilizado inmaterial
 G,6,5,0,Inversiones de inmovilizado inmaterial
 G,6,7,0,"Inversión de reposición en vivienda, locales y otros"
 G,6,9,0,Inversión nueva gestionada para otros entes públicos
+G,6,9,1,Inversión de reposición gestionada para otros entes públicos
 G,7,1,0,A organismos autónomos de la Junta
 G,7,2,0,A empresas públicas de la Junta
 G,7,2,1,A entidades públicas de la Junta
