@@ -1,7 +1,4 @@
 # -*- coding: UTF-8 -*-
-from django.conf.urls import patterns, url
-#from django.conf.urls.i18n import i18n_patterns
-
 
 MAIN_ENTITY_LEVEL = 'comunidad'
 
@@ -18,11 +15,11 @@ BUDGET_LOADER = 'CastillaLaManchaBudgetLoader'
 # Show Payments section in menu & home options. Default: False.
 # SHOW_PAYMENTS = True
 
-# Configure 'by area' payment breakdown. Default: ['area', 'payee', 'description']
-# PAYMENTS_BREAKDOWN_BY_AREA = ['area', 'payee', 'description']
+#  Configure 'by area' payment breakdown. Default: ['area', 'payee', 'description']
+#  PAYMENTS_BREAKDOWN_BY_AREA = ['area', 'payee', 'description']
 
-# Configure 'by payee' payment breakdown. Default: ['payee', 'area', 'description']
-# PAYMENTS_BREAKDOWN_BY_PAYEE = ['payee', 'area', 'description']
+#  Configure 'by payee' payment breakdown. Default: ['payee', 'area', 'description']
+#  PAYMENTS_BREAKDOWN_BY_PAYEE = ['payee', 'area', 'description']
 
 # Show Tax Receipt section in menu & home options. Default: False.
 SHOW_TAX_RECEIPT = True
@@ -49,7 +46,7 @@ SHOW_TAX_RECEIPT = True
 
 # Show an extra treemap in the Policy page, showing institutional breakdown. Default: False.
 # Important: insitutional codes must be consistent along the years, see CONSISTENT_INSTITUTIONAL_CODES.
-SHOW_GLOBAL_INSTITUTIONAL_TREEMAP  = True
+SHOW_GLOBAL_INSTITUTIONAL_TREEMAP = True
 
 # Show an extra tab with funding breakdown (only applicable to some budgets). Default: False.
 # SHOW_FUNDING_TAB = True
@@ -74,41 +71,41 @@ SHOW_GLOBAL_INSTITUTIONAL_TREEMAP  = True
 
 # Supported languages. Default: ('es', 'Castellano')
 LANGUAGES = (
-  ('es', 'Castellano'),
-  # ('en', 'English'),
-  # ('ca', 'Catal&agrave;'),
-  # ('eu', 'Euskera'),
-  # ('gl', 'Galego'),
+    ('es', 'Castellano'),
+    # ('en', 'English'),
+    # ('ca', 'Catal&agrave;'),
+    # ('eu', 'Euskera'),
+    # ('gl', 'Galego'),
 )
 
 # Facebook Aplication ID used in social_sharing temaplate. Default: ''
-# In order to get the ID create an app in https://developers.facebook.com/
-FACEBOOK_ID             = '1869534906625008'
+#  In order to get the ID create an app in https://developers.facebook.com/
+FACEBOOK_ID = '1869534906625008'
 
 # Google Analytics ID. Default: ''
-# In order to get the ID create a Google Analytics Acount in https://analytics.google.com/analytics/web/
-ANALYTICS_ID            = 'UA-28946840-28'
+#  In order to get the ID create a Google Analytics Acount in https://analytics.google.com/analytics/web/
+ANALYTICS_ID = 'UA-28946840-28'
 
 # Setup Data Source Budget link
-DATA_SOURCE_BUDGET      = 'http://www.castillalamancha.es/node/54403'
+DATA_SOURCE_BUDGET = 'http://www.castillalamancha.es/node/54403'
 
 # Setup Data Source Population link
-DATA_SOURCE_POPULATION  = 'http://www.ine.es/jaxiT3/Tabla.htm?t=2853&L=0'
+DATA_SOURCE_POPULATION = 'http://www.ine.es/jaxiT3/Tabla.htm?t=2853&L=0'
 
 # Setup Data Source Inflation link
-DATA_SOURCE_INFLATION   = 'http://www.ine.es/jaxiT3/Tabla.htm?t=10019&L=0'
+DATA_SOURCE_INFLATION = 'http://www.ine.es/jaxiT3/Tabla.htm?t=10019&L=0'
 
 # Setup Main Entity Web Url
-MAIN_ENTITY_WEB_URL     = 'http://www.castillalamancha.es/'
+MAIN_ENTITY_WEB_URL = 'http://www.castillalamancha.es/'
 
 # Setup Main Entity Legal Url (if empty we hide the link)
-MAIN_ENTITY_LEGAL_URL   = 'http://www.castillalamancha.es/avisolegal'
+MAIN_ENTITY_LEGAL_URL = 'http://www.castillalamancha.es/avisolegal'
 
 # Setup Main Entity Legal Url (if empty we hide the link)
 MAIN_ENTITY_PRIVACY_URL = 'http://www.castillalamancha.es/protecciondedatos'
 
 # External URL for Cookies Policy (if empty we use out template page/cookies.html)
-COOKIES_URL             = ''
+COOKIES_URL = ''
 
 # We can define additional URLs applicable only to the theme. These will get added
 # to the project URL patterns list.
@@ -122,7 +119,7 @@ COOKIES_URL             = ''
 # ----------------------
 
 # Programmes to feature as example in home page.
-FEATURED_PROGRAMMES = ['221A', '313A', '322B', '717A', '413D']
+FEATURED_PROGRAMMES = ['412D', '422A', '313D', '718A', '322B']
 
 # Number of programmes to feature in home page. Default: 3
 # NUMBER_OF_FEATURED_PROGRAMMES = 3
@@ -131,12 +128,17 @@ FEATURED_PROGRAMMES = ['221A', '313A', '322B', '717A', '413D']
 # Overview Settings
 # ----------------------
 
-OVERVIEW_INCOME_NODES = [ {
-                            'nodes': ['43'],
-                            'label': 'De la administración del Estado (cap. 4)',
-                            'link_id': '43'
-                          },
-                          '10', '22', '23', '49' ]
+OVERVIEW_INCOME_NODES = [
+    {
+        'nodes': ['43'],
+        'label': 'De la administración del Estado (cap. 4)',
+        'link_id': '43',
+    },
+    '10',
+    '22',
+    '23',
+    '49',
+]
 
 OVERVIEW_EXPENSE_NODES = ['41', '42', '71', '51', '31', '01']
 
@@ -163,7 +165,7 @@ SHOW_OVERVIEW_SUBTOTALS = True
 # ----------------------
 
 # Treemaps minimum height or width to show labels. Default: 70 (Optional)
-# TREEMAP_LABELS_MIN_SIZE = 70
+#  TREEMAP_LABELS_MIN_SIZE = 70
 
 # Treemap minimum font size. Default: 11 (Optional)
 # TREEMAP_LABELS_FONT_SIZE_MIN = 11
@@ -172,7 +174,18 @@ SHOW_OVERVIEW_SUBTOTALS = True
 # TREEMAP_GLOBAL_MAX_VALUE = False
 
 # Allow overriding of default treemap color scheme
-COLOR_SCALE = ['#df65b0', '#6a3d9a', '#ff7f00', '#fec44f', '#e31a1c', '#238b45', '#66c2a4', '#045a8d', '#cab2d6', '#41b6c4',]  #['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#e7969c', '#bcbd22', '#17becf']
+COLOR_SCALE = [
+    '#df65b0',
+    '#6a3d9a',
+    '#ff7f00',
+    '#fec44f',
+    '#e31a1c',
+    '#238b45',
+    '#66c2a4',
+    '#045a8d',
+    '#cab2d6',
+    '#41b6c4',
+]  # ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#e7969c', '#bcbd22', '#17becf']
 
 # How many levels to show in the global institutional treemap? Default: 1.
-# INSTITUTIONAL_MAX_LEVELS = 2
+#  INSTITUTIONAL_MAX_LEVELS = 2
