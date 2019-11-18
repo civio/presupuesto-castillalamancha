@@ -403,6 +403,7 @@ G,8,2,0,A corto plazo
 G,8,2,1,A largo plazo
 G,8,4,0,De empresas públicas de la Junta
 G,8,4,1,De empresas privadas
+G,8,4,3,De fundaciones públicas de la Junta
 G,9,0,0,Amortización de deuda a corto plazo
 G,9,0,1,Amortización de deuda a largo plazo
 G,9,1,0,Amortización de préstamos recibidos a corto plazo

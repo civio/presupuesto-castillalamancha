@@ -67,7 +67,6 @@ $(document).ready(function(){
   var addYearSelectorCustomLabels = function(){
     var lang = $('html').attr('lang')
     var labels = {
-      '2018': { 'es': 'primer semestre' },
       '2019': { 'es': 'prorrogado' }
     }
 
