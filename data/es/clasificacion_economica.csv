@@ -101,6 +101,7 @@ G,5,0,,Dotación fondo de contingencia y otros imprevistos
 G,5,2,,Otros imprevistos
 G,6,0,,Proyectos de inversión nueva
 G,6,1,,Proyectos de inversión de reposición
+G,6,2,,Inversión nueva asociada al funcionamiento operativo de los servicios
 G,6,9,,Inversión nueva gestionada para otros entes públicos
 G,7,2,,A entidades públicas de la Junta
 G,7,3,,"A la administración del Estado, OO.AA., empresas públicas y otros entes públicos"
@@ -220,6 +221,7 @@ I,7,9,0,Fondo Europeo de Desarrollo Regional. FEDER
 I,7,9,1,Fondo de cohesión
 I,7,9,2,Fondo Europeo Agrario de Desarrollo Rural. FEADER
 I,7,9,3,Fondo europeo agrario de garantía. FEAGA
+I,7,9,8,Next Generation EU
 I,7,9,9,Otras transferencias
 I,8,2,0,A corto plazo
 I,8,2,1,A largo plazo
