@@ -325,6 +325,7 @@ G,4,6,6,En materia de empleo y formación
 G,4,6,7,En materia educativa
 G,4,7,0,A empresas privadas
 G,4,7,1,En materia de promoción y protección social
+G,4,7,2,En materia sanitaria
 G,4,7,3,En materia agropecuaria y medioambiental
 G,4,7,4,En materia de promoción cultural y del deporte
 G,4,7,5,En materia de promoción de sectores productivos
@@ -407,6 +408,7 @@ G,8,2,0,A corto plazo
 G,8,2,1,A largo plazo
 G,8,4,0,De empresas públicas de la Junta
 G,8,4,1,De empresas privadas
+G,8,4,2,Aportaciones patrimoniales
 G,8,4,3,De fundaciones públicas de la Junta
 G,9,0,0,Amortización de deuda a corto plazo
 G,9,0,1,Amortización de deuda a largo plazo
