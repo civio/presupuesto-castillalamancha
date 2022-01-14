@@ -92,6 +92,7 @@ G,4,0,,A la Junta de Comunidades Castilla-La Mancha
 G,4,1,,A organismos autónomos de la Junta
 G,4,2,,A entidades públicas de la Junta
 G,4,3,,"A la administración del Estado, OO.AA., empresas públicas y otros entes públicos"
+G,4,4,,A la Seguridad Social
 G,4,5,,A comunidades autónomas
 G,4,6,,A corporaciones locales
 G,4,7,,A empresas privadas
@@ -105,6 +106,7 @@ G,6,2,,Inversión nueva asociada al funcionamiento operativo de los servicios
 G,6,9,,Inversión nueva gestionada para otros entes públicos
 G,7,2,,A entidades públicas de la Junta
 G,7,3,,"A la administración del Estado, OO.AA., empresas públicas y otros entes públicos"
+G,7,4,,A la Seguridad Social
 G,7,6,,A corporaciones locales
 G,7,7,,A empresas privadas
 G,7,8,,A familias e instituciones sin fin de lucro
@@ -314,6 +316,7 @@ G,4,2,9,A otros entes públicos
 G,4,3,0,"A la administración del Estado, OO.AA, empresas públicas y otros entes públicos"
 G,4,3,3,En materia agropecuaria y medioambiental
 G,4,3,6,En materia de empleo y formación
+G,4,4,0,A la Seguridad Social
 G,4,5,0,A comunidades autónomas
 G,4,6,0,A corporaciones locales
 G,4,6,1,En materia de promoción y protección social
@@ -385,6 +388,7 @@ G,7,2,1,A entidades públicas de la Junta
 G,7,2,2,A universidades públicas
 G,7,2,3,Fundaciones públicas regionales
 G,7,3,0,"A la administración del Estado, OO.AA, empresas públicas y otros entes públicos"
+G,7,4,0,A la Seguridad Social
 G,7,6,0,A corporaciones locales
 G,7,6,1,En materia de promoción y protección social
 G,7,6,2,En materia sanitaria
