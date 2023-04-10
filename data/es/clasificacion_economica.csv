@@ -66,7 +66,7 @@ I,7,8,,De familias e insituciones sin fin de lucro
 I,7,9,,Del exterior
 I,8,2,,Reintegro de préstamos concedidos
 I,8,3,,Reintegro de depósitos
-I,8,4,,Enajenación de acciones, obligaciones y bonos
+I,8,4,,"Enajenación de acciones, obligaciones y bonos"
 I,9,0,,Emisión de deuda pública
 I,9,1,,Préstamos en moneda nacional
 I,9,3,,Depósitos y fianzas recibidas
@@ -111,7 +111,7 @@ G,7,6,,A corporaciones locales
 G,7,7,,A empresas privadas
 G,7,8,,A familias e instituciones sin fin de lucro
 G,8,2,,Concesión de préstamos
-G,8,4,,Acciones, obligaciones y bonos
+G,8,4,,"Acciones, obligaciones y bonos"
 G,9,0,,Amortización de deuda
 G,9,1,,Amortización de préstamos en moneda nacional
 G,9,2,,Amortización de préstamos en moneda extrajera
