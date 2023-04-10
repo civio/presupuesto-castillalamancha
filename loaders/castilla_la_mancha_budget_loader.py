@@ -228,6 +228,7 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
                 ec = ec[0]
 
             # Fetch institutional category (the slice ranges are the actual thing we're changing)
+            # FIXME: the base class now supports a better way (see La Rioja for example)
             ic = InstitutionalCategory.objects.filter(
                 institution=item['ic_code'][0],
                 section=item['ic_code'][0:3] if len(item['ic_code']) >= 3 else None,
