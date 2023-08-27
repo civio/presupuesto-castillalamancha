@@ -105,9 +105,8 @@ COOKIES_URL = ''
 
 # We can define additional URLs applicable only to the theme. These will get added
 # to the project URL patterns list.
-# Must be needed to uncomment 3rd line in order to import i18n_patterns
-# EXTRA_URLS = i18n_patterns('presupuesto-base.views',
-#     url(r'^visita-guiada$', 'guidedvisit', name="guidedvisit"),
+# EXTRA_URLS = (
+#     url(r'^visita-guiada$', 'guidedvisit'),
 # )
 
 
