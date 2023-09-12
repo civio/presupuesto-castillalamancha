@@ -83,22 +83,22 @@ LANGUAGES = (
 ANALYTICS_ID = 'UA-28946840-28'
 
 # Setup Data Source Budget link
-DATA_SOURCE_BUDGET = 'http://www.castillalamancha.es/node/54403'
+DATA_SOURCE_BUDGET = 'https://www.castillalamancha.es/node/54403'
 
 # Setup Data Source Population link
-DATA_SOURCE_POPULATION = 'http://www.ine.es/jaxiT3/Tabla.htm?t=2853&L=0'
+DATA_SOURCE_POPULATION = 'https://www.ine.es/jaxiT3/Tabla.htm?t=2853&L=0'
 
 # Setup Data Source Inflation link
-DATA_SOURCE_INFLATION = 'http://www.ine.es/jaxiT3/Tabla.htm?t=10019&L=0'
+DATA_SOURCE_INFLATION = 'https://www.ine.es/jaxiT3/Tabla.htm?t=10019&L=0'
 
 # Setup Main Entity Web Url
-MAIN_ENTITY_WEB_URL = 'http://www.castillalamancha.es/'
+MAIN_ENTITY_WEB_URL = 'https://www.castillalamancha.es/'
 
 # Setup Main Entity Legal Url (if empty we hide the link)
-MAIN_ENTITY_LEGAL_URL = 'http://www.castillalamancha.es/avisolegal'
+MAIN_ENTITY_LEGAL_URL = 'https://www.castillalamancha.es/avisolegal'
 
 # Setup Main Entity Legal Url (if empty we hide the link)
-MAIN_ENTITY_PRIVACY_URL = 'http://www.castillalamancha.es/protecciondedatos'
+MAIN_ENTITY_PRIVACY_URL = 'https://www.castillalamancha.es/protecciondedatos'
 
 # External URL for Cookies Policy (if empty we use out template page/cookies.html)
 COOKIES_URL = ''
