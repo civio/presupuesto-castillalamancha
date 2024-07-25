@@ -170,6 +170,7 @@ I,4,3,0,Fondo de suficiencia
 I,4,3,2,De diversos ministerios
 I,4,3,3,Otras transferencias
 I,4,3,4,De organismos autónomos estatales
+I,4,3,5,De empresas públicas estatales
 I,4,3,6,De otros entes públicos estatales
 I,4,4,0,De la Seguridad Social
 I,4,5,0,De comunidades autónomas
@@ -209,6 +210,7 @@ I,6,1,9,Venta de otras inversiones reales
 I,6,8,0,De ejercicios cerrados
 I,6,8,1,De presupuesto corriente
 I,7,0,0,De la Junta de Comunidades de Castilla-La Mancha
+I,7,1,0,De organismos autónomos de la Junta
 I,7,2,3,De fundaciones públicas
 I,7,3,0,Fondo de compensación interterritorial
 I,7,3,2,De diversos Ministerios
