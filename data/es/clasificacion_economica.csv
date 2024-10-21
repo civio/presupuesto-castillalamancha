@@ -57,7 +57,8 @@ I,5,9,,Otros ingresos patrimoniales
 I,6,0,,De terrenos
 I,6,1,,De las demás inversiones reales
 I,6,8,,Reintegros por operaciones de capital
-I,7,0,,De la Junta de Comunidades de Castilla-La mancha
+I,7,0,,De la Junta de Comunidades de Castilla-La Mancha
+I,7,1,,De organismos autónomos de la Junta
 I,7,2,,De empresas públicas y otros entes públicos
 I,7,3,,"De la administración del Estado, OO.AA., empresas públicas y otros entes públicos"
 I,7,6,,De corporaciones locales
@@ -103,7 +104,12 @@ G,5,2,,Otros imprevistos
 G,6,0,,Proyectos de inversión nueva
 G,6,1,,Proyectos de inversión de reposición
 G,6,2,,Inversión nueva asociada al funcionamiento operativo de los servicios
+G,6,3,,Inversión de reposición asociada al funcionamiento operativo de los servicios
+G,6,4,,Inversión nueva de caracter inmaterial
+G,6,5,,Inversión de reposición de caracter inmaterial
+G,6,7,,"Inversión nueva en vivienda, locales y otros"
 G,6,9,,Inversión nueva gestionada para otros entes públicos
+G,7,1,,A organismos autónomos de la Junta
 G,7,2,,A entidades públicas de la Junta
 G,7,3,,"A la administración del Estado, OO.AA., empresas públicas y otros entes públicos"
 G,7,4,,A la Seguridad Social
@@ -111,6 +117,7 @@ G,7,6,,A corporaciones locales
 G,7,7,,A empresas privadas
 G,7,8,,A familias e instituciones sin fin de lucro
 G,8,2,,Concesión de préstamos
+G,8,3,,Constitución de depósitos y fianzas
 G,8,4,,"Acciones, obligaciones y bonos"
 G,9,0,,Amortización de deuda
 G,9,1,,Amortización de préstamos en moneda nacional
