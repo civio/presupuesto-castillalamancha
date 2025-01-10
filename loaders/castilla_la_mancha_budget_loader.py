@@ -1,7 +1,6 @@
 # -*- coding: UTF-8 -*-
 from budget_app.models import *
 from budget_app.loaders import SimpleBudgetLoader
-from decimal import *
 import csv
 import os
 import re
@@ -34,8 +33,10 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
         '57': 'M',
         '61': 'N',
         '70': 'O',
-        '80': 'P',
-        '81': 'Q'
+        '76': 'P',
+        '77': 'Q',
+        '80': 'R',
+        '81': 'S'
     }
 
     def _get_fc_code(self, value):
@@ -217,12 +218,12 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
                 budget=budget,
             )
             if not ec:
-                print u"ALERTA: No se encuentra la categoría económica de %s '%s' para '%s': %s€" % (
+                print(u"ALERTA: No se encuentra la categoría económica de %s '%s' para '%s': %s€" % (
                     "gastos" if item['is_expense'] else "ingresos",
                     item['ec_code'].decode("utf8"),
                     item['description'].decode("utf8"),
                     item['amount'] / 100,
-                )
+                ))
                 continue
             else:
                 ec = ec[0]
@@ -236,11 +237,11 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
                 budget=budget,
             )
             if not ic:
-                print u"ALERTA: No se encuentra la categoría institucional '%s' para '%s': %s€" % (
+                print(u"ALERTA: No se encuentra la categoría institucional '%s' para '%s': %s€" % (
                     item['ic_code'].decode("utf8"),
                     item['description'].decode("utf8"),
                     item['amount'] / 100,
-                )
+                ))
                 continue
             else:
                 ic = ic[0]
@@ -258,11 +259,11 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
                     budget=budget,
                 )
                 if not fc:
-                    print u"ALERTA: No se encuentra la categoría funcional '%s' para '%s': %s€" % (
+                    print(u"ALERTA: No se encuentra la categoría funcional '%s' para '%s': %s€" % (
                         item['fc_code'].decode("utf8"),
                         item['description'].decode("utf8"),
                         item['amount'] / 100,
-                    )
+                    ))
                     continue
                 else:
                     fc = fc[0]
@@ -283,10 +284,10 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
             ).save()
 
         if budgeted_income != budgeted_expense:
-            print "  Info: los ingresos y gastos del presupuesto no coinciden %0.2f <> %0.2f" % (
+            print("  Info: los ingresos y gastos del presupuesto no coinciden %0.2f <> %0.2f" % (
                 budgeted_income / 100.0,
                 budgeted_expense / 100.0,
-            )
+            ))
 
     # We override this method to be able to load per year classification files
     def load_institutional_classification(self, path, budget):
