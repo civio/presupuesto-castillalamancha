@@ -109,6 +109,7 @@ G,6,4,,Inversión nueva de caracter inmaterial
 G,6,5,,Inversión de reposición de caracter inmaterial
 G,6,7,,"Inversión nueva en vivienda, locales y otros"
 G,6,9,,Inversión nueva gestionada para otros entes públicos
+G,7,0,,A la Junta de Castilla-La Mancha
 G,7,1,,A organismos autónomos de la Junta
 G,7,2,,A entidades públicas de la Junta
 G,7,3,,"A la administración del Estado, OO.AA., empresas públicas y otros entes públicos"
@@ -395,6 +396,7 @@ G,6,7,0,"Inversión de reposición en vivienda, locales y otros"
 G,6,9,0,Inversión nueva gestionada para otros entes públicos
 G,6,9,1,Inversión de reposición gestionada para otros entes públicos
 G,6,9,9,Otras inversiones
+G,7,0,0,A la Junta de Castilla-La Mancha
 G,7,1,0,A organismos autónomos de la Junta
 G,7,2,0,A empresas públicas de la Junta
 G,7,2,1,A entidades públicas de la Junta
