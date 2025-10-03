@@ -220,8 +220,8 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
             if not ec:
                 print(u"ALERTA: No se encuentra la categoría económica de %s '%s' para '%s': %s€" % (
                     "gastos" if item['is_expense'] else "ingresos",
-                    item['ec_code'].decode("utf8"),
-                    item['description'].decode("utf8"),
+                    item['ec_code'],
+                    item['description'],
                     item['amount'] / 100,
                 ))
                 continue
@@ -238,8 +238,8 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
             )
             if not ic:
                 print(u"ALERTA: No se encuentra la categoría institucional '%s' para '%s': %s€" % (
-                    item['ic_code'].decode("utf8"),
-                    item['description'].decode("utf8"),
+                    item['ic_code'],
+                    item['description'],
                     item['amount'] / 100,
                 ))
                 continue
@@ -260,8 +260,8 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
                 )
                 if not fc:
                     print(u"ALERTA: No se encuentra la categoría funcional '%s' para '%s': %s€" % (
-                        item['fc_code'].decode("utf8"),
-                        item['description'].decode("utf8"),
+                        item['fc_code'],
+                        item['description'],
                         item['amount'] / 100,
                     ))
                     continue
@@ -293,7 +293,7 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
     def load_institutional_classification(self, path, budget):
         # The load path is the actual change we make
         reader = csv.reader(
-            open(os.path.join(path, 'clasificacion_organica.csv'), 'rb')
+            open(os.path.join(path, 'clasificacion_organica.csv'))
         )
         for index, line in enumerate(reader):
             if re.match("^#", line[0]):  # Ignore comments
