@@ -1,186 +1,186 @@
-@import "theme-variables";
+@import 'theme-variables';
 
-a{
-  color: $brand-secondary;
+a {
+	color: $brand-secondary;
 }
 
-.navbar-default .navbar-nav > li > a:hover{
-  color: $dvmi-navbar-color;
+.navbar-default .navbar-nav > li > a:hover {
+	color: $dvmi-navbar-color;
 }
 
-.navbar-default .navbar-toggle{
-  color: $brand-secondary;
+.navbar-default .navbar-toggle {
+	color: $brand-secondary;
 
-  &:hover{
-    background: $brand-secondary;
-  }
+	&:hover {
+		background: $brand-secondary;
+	}
 }
 
-.navbar-brand{
-  width: auto;
-  left: 200px;
-  height: auto;
+.navbar-brand {
+	width: auto;
+	left: 200px;
+	height: auto;
 }
 
 // Transparencia Logo
-.transparencia-logo{
-  width: 370px;
-  height: 75px;
-  margin: 0 auto 30px;
-  padding-left: 185px;
-  vertical-align: middle;
-  background: url(../assets/logo-transparencia.png) 0 0 no-repeat transparent;
-  background-size: auto 75px;
-  text-align: left;
+.transparencia-logo {
+	width: 370px;
+	height: 75px;
+	margin: 0 auto 30px;
+	padding-left: 185px;
+	vertical-align: middle;
+	background: url(../assets/logo-transparencia.png) 0 0 no-repeat transparent;
+	background-size: auto 75px;
+	text-align: left;
 
-  a{
-    display: block;
-    color: #777;
-    font-size: 1.25em;
-    padding-left: 10px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    border-left: 1px solid #777;
-  }
+	a {
+		display: block;
+		color: #777;
+		font-size: 1.25em;
+		padding-left: 10px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		border-left: 1px solid #777;
+	}
 }
 
 @media (max-width: $screen-lg) {
-  .navbar-brand{
-    font-size: 2.5em;
-    left: 186px;
-  }
+	.navbar-brand {
+		font-size: 2.5em;
+		left: 186px;
+	}
 }
 
 @media (min-width: $screen-md) {
-  .transparencia-logo{
-    float: right;
-    margin-top: 38px;
-    margin-bottom: 0;
-  }
+	.transparencia-logo {
+		float: right;
+		margin-top: 38px;
+		margin-bottom: 0;
+	}
 }
 
-.home-content .options .option>div .icon{
-  color: mix( $color-blue-light, $brand-secondary, 75% );
+.home-content .options .option > div .icon {
+	color: mix($brand-primary, $brand-secondary, 75%);
 }
 
-.home-content .options .option>div{
-  &:hover{
-    border-color: $brand-secondary;
+.home-content .options .option > div {
+	&:hover {
+		border-color: $brand-secondary;
 
-    h3{
-      color: $brand-secondary;
-    }
-  }
-  .btn{
-    text-transform: uppercase;
-    border-color: lighten($brand-secondary, 5%);
-    background: lighten($brand-secondary, 5%);
+		h3 {
+			color: $brand-secondary;
+		}
+	}
+	.btn {
+		text-transform: uppercase;
+		border-color: lighten($brand-secondary, 5%);
+		background: lighten($brand-secondary, 5%);
 
-    &:before{
-      display: none;
-    }
+		&:before {
+			display: none;
+		}
 
-    &:hover{
-      border-color: $brand-secondary;
-      background: $brand-secondary;
-    }
-  }
+		&:hover {
+			border-color: $brand-secondary;
+			background: $brand-secondary;
+		}
+	}
 }
 
-.form-search .form-inline{
-  .form-control,
-  .btn{
-    border-color: $color-green;
-  }
-  .btn{
-    background: $color-green;
-    &:hover{
-      background: darken( $color-green, 5% );
-    }
-  }
+.form-search .form-inline {
+	.form-control,
+	.btn {
+		border-color: $brand-secondary;
+	}
+	.btn {
+		background: $brand-secondary;
+		&:hover {
+			background: darken($brand-secondary, 5%);
+		}
+	}
 }
 
 .tax-receipt-content .form-user-incomings,
-.tax-receipt-content #tax-amount{
-  background: $color-blue-light;
+.tax-receipt-content #tax-amount {
+	background: $brand-terciary;
 }
 
-.tax-receipt-content .form-user-incomings{
-  padding-top: 2*$grid-gutter-width/3;
-  padding-bottom: 2*$grid-gutter-width/3;
-  text-align: center;
+.tax-receipt-content .form-user-incomings {
+	padding-top: 2 * $grid-gutter-width/3;
+	padding-bottom: 2 * $grid-gutter-width/3;
+	text-align: center;
 
-  .form-group{
-    width: auto;
-    float: none;
-  }
+	.form-group {
+		width: auto;
+		float: none;
+	}
 
-  .input-group{
-    margin-left: $grid-gutter-width/2;
-  }
+	.input-group {
+		margin-left: $grid-gutter-width/2;
+	}
 }
 
-.tax-receipt-content .tax-note{
-  padding: $grid-gutter-width/2 $grid-gutter-width;
-  margin-bottom: $grid-gutter-width;
-  background: $page-header-bg;
+.tax-receipt-content .tax-note {
+	padding: $grid-gutter-width/2 $grid-gutter-width;
+	margin-bottom: $grid-gutter-width;
+	background: $page-header-bg;
 }
 
-.tax-receipt-table-content .footnote{
-  display: none;
+.tax-receipt-table-content .footnote {
+	display: none;
 }
 
 // Sankey data update alert
-.alert-data-update{
-  padding-top: 0;
-  text-align: center;
+.alert-data-update {
+	padding-top: 0;
+	text-align: center;
 }
 
-.body-entities .alert-data-update{
-  margin-bottom: 1.5*$grid-gutter-width;
+.body-entities .alert-data-update {
+	margin-bottom: 1.5 * $grid-gutter-width;
 }
 
 @media (min-width: $screen-sm-min) {
-
-  .budget-viz .alert-data-update{
-    position: relative;
-    top: 16px;
-    margin: 0;
-    padding-bottom: 0;
-    line-height: 1em;
-  }
+	.budget-viz .alert-data-update {
+		position: relative;
+		top: 16px;
+		margin: 0;
+		padding-bottom: 0;
+		line-height: 1em;
+	}
 }
 
 // Budget summary bar height
-.budget-summary{
-  height: 52px;
+.budget-summary {
+	height: 52px;
 }
 
-.budget-summary-item .budget-summary-bar{
-  height: 32px;
-  line-height: 32px
+.budget-summary-item .budget-summary-bar {
+	height: 32px;
+	line-height: 32px;
 }
 
 // Chapters and articles income and expenses alert
-.alert-incomes, .alert-expenses{
-  padding-top: 0;
-  margin: 0;
-  font-size: 1.150em;
-  text-align: center;
+.alert-incomes,
+.alert-expenses {
+	padding-top: 0;
+	margin: 0;
+	font-size: 1.15em;
+	text-align: center;
 }
 
 .alert-articles {
-  position: relative;
-  top: 1.150em;
+	position: relative;
+	top: 1.15em;
 }
 
-.main-footer .credit-aragon .link-civio{
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 $grid-gutter-width/6;
-  text-indent: -9999px;
-  overflow: hidden;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-color: transparent;
-} 
+.main-footer .credit-aragon .link-civio {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 $grid-gutter-width/6;
+	text-indent: -9999px;
+	overflow: hidden;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
