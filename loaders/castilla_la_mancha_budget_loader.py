@@ -1,9 +1,7 @@
 # -*- coding: UTF-8 -*-
 from budget_app.models import *
 from budget_app.loaders import SimpleBudgetLoader
-import csv
 import os
-import re
 
 
 class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
@@ -273,30 +271,15 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
                 budgeted_expense / 100.0,
             ))
 
-    # We override this method to be able to load per year classification files
-    def load_institutional_classification(self, path, budget):
-        # The load path is the actual change we make
-        reader = csv.reader(
-            open(os.path.join(path, 'clasificacion_organica.csv'))
-        )
-        for index, line in enumerate(reader):
-            if re.match("^#", line[0]):  # Ignore comments
-                continue
-
-            # We need to map the two digits institution code (their section code) to one char
-            institution = line[0]
-            institution = self.sections_mapping.get(institution, 'Z')
-            section = line[1]
-            department = line[2]
-            description = line[3]
-
-            ic = InstitutionalCategory(
-                institution=institution if institution != "" else None,
-                section=institution + section if section != "" else None,
-                department=institution + section + department
-                if department != ""
-                else None,
-                description=description,
-                budget=budget,
-            )
-            ic.save()
+    # We need to map the two digits institution code (their section code) to one char.
+    # (The classification changes every year, so it lives in each year's folder.)
+    def parse_institutional_category(self, line):
+        institution = self.sections_mapping.get(line[0], 'Z')
+        section = line[1]
+        department = line[2]
+        return {
+            'institution': institution if institution != "" else None,
+            'section': institution + section if section != "" else None,
+            'department': institution + section + department if department != "" else None,
+            'description': line[3]
+        }
