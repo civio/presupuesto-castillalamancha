@@ -274,12 +274,11 @@ class CastillaLaManchaBudgetLoader(SimpleBudgetLoader):
     # We need to map the two digits institution code (their section code) to one char.
     # (The classification changes every year, so it lives in each year's folder.)
     def parse_institutional_category(self, line):
-        institution = self.sections_mapping.get(line[0], 'Z')
-        section = line[1]
-        department = line[2]
+        institution, section, department, description = line[:4]
+        institution, section, department = self._join_codes(self.sections_mapping.get(institution, 'Z'), section, department)
         return {
-            'institution': institution if institution != "" else None,
-            'section': institution + section if section != "" else None,
-            'department': institution + section + department if department != "" else None,
-            'description': line[3]
+            'institution': institution,
+            'section': section,
+            'department': department,
+            'description': description
         }
