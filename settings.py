@@ -48,9 +48,6 @@ SHOW_TAX_RECEIPT = True
 # Important: insitutional codes must be consistent along the years, see CONSISTENT_INSTITUTIONAL_CODES.
 SHOW_GLOBAL_INSTITUTIONAL_TREEMAP = True
 
-# Show an extra tab with funding breakdown (only applicable to some budgets). Default: False.
-# SHOW_FUNDING_TAB = True
-
 # Show an extra column with actual revenues/expenses. Default: True.
 # Warning: the execution data still gets shown in the summary chart and in downloads.
 # SHOW_ACTUAL = False
